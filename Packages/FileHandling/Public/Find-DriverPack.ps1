@@ -53,5 +53,5 @@ function Find-DriverPack {
     #-----------------------------------------------------------[Execution]------------------------------------------------------------
 
     $Man = $DriverPacks | ? { ($_.Manufacturer -eq $Manufacturer) } | select -ExpandProperty Drivers
-    return $Man | ? { ($_.SystemName -eq $Model) -and ($_.OSArchitecture -eq $Architecture) }
+    return $Man | ? { ($_.SystemName -eq $Model) -and ($_.OSArchitecture -eq $Architecture) } | Add-Member -NotePropertyName "Manufacturer" -NotePropertyValue $Manufacturer -PassThru
 }

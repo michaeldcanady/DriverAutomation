@@ -113,4 +113,5 @@ function Move-DriverPack {
     finally {
         Write-Progress -Activity "Copying Driver Files:" -Status "Copying Complete" -Completed
     }
+    return $Dest
 }

@@ -72,7 +72,7 @@ param(
 
 BEGIN {
     #---------------------------------------------------------[Initialisations]--------------------------------------------------------
-
+    Import-Module .\Packages\WindowsVersions\WindowsVersions.psm1 -Force
     #Set Error Action to Silently Continue
     $ErrorActionPreference = "Continue"
 
@@ -262,14 +262,14 @@ BEGIN {
             $h = $HpDrivers.newdataset.hpclientdriverpackcatalog.softpaqlist.softpaq | ? { $_.Id -eq $DriverPacks[$i].SoftPaqId } | select Version, Url, $($Algorithm)
     
             $Drivers += [hashtable]@{
-                SystemName = $DriverPacks[$i].SystemName
-                SystemID   = $DriverPacks[$i].SystemId
-                Algorithm  = $Algorithm
-                Version    = $h.Version
-                Url        = $h.Url
-                Hash       = $h.$($Algorithm)
-                OSVersion  = $($Os -replace $($DriverPacks[$i].Architecture), "").Trim()
-                OsBuilds   = if ([string]::IsNullOrEmpty($Build)) { "" }else { $($Build).Trim() }
+                SystemName     = $DriverPacks[$i].SystemName
+                SystemID       = $DriverPacks[$i].SystemId
+                Algorithm      = $Algorithm
+                Version        = $h.Version
+                Url            = $h.Url
+                Hash           = $h.$($Algorithm)
+                OSVersion      = $($Os -replace $($DriverPacks[$i].Architecture), "").Trim()
+                OsBuilds       = if ([string]::IsNullOrEmpty($Build)) { "" }else { $($Build).Trim() }
                 OSArchitecture = "x" + $($DriverPacks[$i].Architecture -replace "-Bit", "")
             }
     
@@ -314,11 +314,10 @@ BEGIN {
                         }
                         $Drivers += [hashtable]@{
                             SystemName     = $DriverPack.name
-                            SystemID       = ""
+                            SystemID       = "N/A"
                             Version        = $($Info[-1]).Trim(".exe")
                             Path           = $DowloadLink
-                            OSVersion      = $OsVersion
-                            OsBuilds       = $Version
+                            OSBuild        = $(ConvertTo-BuildNumber -OperatingSystem "$OsVersion" -Version "$Version")
                             OSArchitecture = "x" + $OsArchitecture
                             Algorithm      = "N/A"
                             Hash           = "N/A"
