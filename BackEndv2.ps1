@@ -42,6 +42,65 @@ $DeploymentPlatforms = @("ConfigMgr - Standard Pkg", "ConfigMgr - Driver Pkg", "
 
 $Architectures = @("x64", "x86")
 
+$OperationSystemBuilds = @(
+    @{
+        Version = "Windows 11 21H2"
+        Build = "10.0.22000"
+    }
+    @{
+        Version = "Window 10 21H2"
+        Build = "10.0.19044"
+    }
+    @{
+        Version = "Window 10 21H1"
+        Build = "10.0.19043"
+    }
+    @{
+        Version = "Window 10 20H2"
+        Build = "10.0.19042"
+    }
+    @{
+        Version = "Window 10 20H1"
+        Build = "10.0.19041"
+    }
+    @{
+        Version = "Window 10 1909"
+        Build = "10.0.18363"
+    }
+    @{
+        Version = "Window 10 1903"
+        Build = "10.0.18362"
+    }
+    @{
+        Version = "Window 10 1809"
+        Build = "10.0.17763"
+    }
+    @{
+        Version = "Window 10 1803"
+        Build = "10.0.17134"
+    }
+    @{
+        Version = "Window 10 1709"
+        Build = "10.0.16299"
+    }
+    @{
+        Version = "Window 10 1703"
+        Build = "10.0.15063"
+    }
+    @{
+        Version = "Window 10 1607"
+        Build = "10.0.14393"
+    }
+    @{
+        Version = "Window 10 1511"
+        Build = "10.0.10586"
+    }
+    @{
+        Version = "Window 10"
+        Build = "10.0.10240"
+    }
+)
+
 $OperationSystems = @(
     [PSCustomObject]@{
         Version = "Windows 10"
@@ -137,23 +196,27 @@ $Models = $ListOfManufacturers | Select-Object Manufacturer, @{N = "Models"; E =
 
 $DriverPack = Find-DriverPack -DriverPacks $(Get-ManufacturersInformation)  -Manufacturer "Dell" -Model "Optiplex 5070" -Architecture "x64"
 
+$DriverPack
+
 #$CompressedFile = Start-DriverPackDownload -Driver $DriverPack
 
 #Expand-DriverPack -CompressedFile $CompressedFile
 
-Move-DriverPack -Source "C:\temp\5070-win10-A08-J36D1" -Destination "\\mecmprod01\e$\Test"
+#$ServerLocation = Move-DriverPack -Source "C:\temp\5070-win10-A08-J36D1" -Destination "\\mecmprod01\e$\Test"
 
-$DriverPackageParams = @{
-    SiteCode = $SiteCode;
-    Name = "Drivers - $ModelName - $OsVersion $Architecture";
-    Version = $ModelVersion;
-    Source = $ServerLocation;
-    Manufacturer = $DriverManufacturer;
-}
+$OS = if([string]::IsNullOrEmpty($DriverPack.OsBuilds)){$DriverPack.OSVersion}else{"$($DriverPack.OSVersion) $($DriverPack.OsBuilds)"}
 
-if($DistributePackage){
-    $DriverPackageParams["Distribute"] = $true
-    $DriverPackageParams["DistributionPoint"] = $DistributionPoints
-}
+#$DriverPackageParams = @{
+#    SiteCode = $SiteCode;
+#    Name = "Drivers - $($DriverPack.Manufacturer) $($DriverPack.SystemName) - $OS $($DriverPack.OSArchitecture)";
+#    Version = $($DriverPack.Version);
+#    Source = $ServerLocation;
+#    Manufacturer = $($DriverPack.Manufacturer);
+#}
 
-New-DriverPackage @DriverPackageParams
+#if($DistributePackage){
+#    $DriverPackageParams["Distribute"] = $true
+#    $DriverPackageParams["DistributionPoint"] = $DistributionPoints
+#}
+
+#New-DriverPackage @DriverPackageParams
