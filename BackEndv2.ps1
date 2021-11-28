@@ -25,99 +25,76 @@
 #>
 
 #-----------------------------------------------------------[Parameters]-----------------------------------------------------------
+[CmdletBinding()]
+param(
+    [string]$Manufacturer,
+    [string]$Model,
+    [ValidateSet("x86", "x64")]
+    [string]$Architecture,
+    [string]$OS,
 
+    [Parameter(Mandatory, ParameterSetName = "ConfigMgrDistribute")]
+    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgrDistribute")]
+    [Parameter(Mandatory, ParameterSetName = "ConfigMgr")]
+    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgr")]
+    [ValidateSet("Standard Pkg", "Driver Pkg")]
+    [string]$ConfigMgr,
 
+    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgrDistribute")]
+    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgr")]
+    [Parameter(Mandatory, ParameterSetName = "MDT")]
+    [switch]$MDT,
 
-#---------------------------------------------------------[Initialisations]--------------------------------------------------------
+    [Parameter(Mandatory, ParameterSetName = "DownloadOnly")]
+    [Parameter(Mandatory, ParameterSetName = "Generate&Download")]
+    [switch]$Download,
 
-Import-Module .\Packages\FileHandling\FileHandling.psm1 -Force
-Import-Module .\Packages\SccmPackage\SccmPackage.psm1 -Force
+    [Parameter(Mandatory, ParameterSetName = "GenerateXml")]
+    [Parameter(Mandatory, ParameterSetName = "Generate&Download")]
+    [switch]$GenerateXml,
 
-#----------------------------------------------------------[Declarations]----------------------------------------------------------
+    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgrDistribute")]
+    [Parameter(Mandatory, ParameterSetName = "ConfigMgrDistribute")]
+    [Parameter(Mandatory, ParameterSetName = "ConfigMgr")]
+    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgr")]
+    [string]$SiteCode,
 
-$ListOfManufacturers = @()
+    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgrDistribute")]
+    [Parameter(Mandatory, ParameterSetName = "ConfigMgrDistribute")]
+    [Parameter(Mandatory, ParameterSetName = "ConfigMgr")]
+    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgr")]
+    [string]$SiteServer,
 
-$DeploymentPlatforms = @("ConfigMgr - Standard Pkg", "ConfigMgr - Driver Pkg", "ConfigMgr - Standard Pkg(Pilot)", "MDT", "Both - ConfigMgr Driver Pkg & MDT",
-    "Both - CStandard Pkg & MDT", "Download Only", "Download & XML Generation")
+    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgrDistribute")]
+    [Parameter(Mandatory, ParameterSetName = "ConfigMgrDistribute")]
+    [switch]$DistributePackage,
 
-$Architectures = @("x64", "x86")
-
-$OperationSystemBuilds = @(
-    @{
-        Version = "Windows 11 21H2"
-        Build = "10.0.22000"
-    }
-    @{
-        Version = "Window 10 21H2"
-        Build = "10.0.19044"
-    }
-    @{
-        Version = "Window 10 21H1"
-        Build = "10.0.19043"
-    }
-    @{
-        Version = "Window 10 20H2"
-        Build = "10.0.19042"
-    }
-    @{
-        Version = "Window 10 20H1"
-        Build = "10.0.19041"
-    }
-    @{
-        Version = "Window 10 1909"
-        Build = "10.0.18363"
-    }
-    @{
-        Version = "Window 10 1903"
-        Build = "10.0.18362"
-    }
-    @{
-        Version = "Window 10 1809"
-        Build = "10.0.17763"
-    }
-    @{
-        Version = "Window 10 1803"
-        Build = "10.0.17134"
-    }
-    @{
-        Version = "Window 10 1709"
-        Build = "10.0.16299"
-    }
-    @{
-        Version = "Window 10 1703"
-        Build = "10.0.15063"
-    }
-    @{
-        Version = "Window 10 1607"
-        Build = "10.0.14393"
-    }
-    @{
-        Version = "Window 10 1511"
-        Build = "10.0.10586"
-    }
-    @{
-        Version = "Window 10"
-        Build = "10.0.10240"
-    }
+    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgrDistribute")]
+    [Parameter(Mandatory, ParameterSetName = "ConfigMgrDistribute")]
+    [string[]]$DistributionPoint
 )
 
-$OperationSystems = @(
-    [PSCustomObject]@{
-        Version = "Windows 10"
-        Builds  = @("1803", "1809", "1909", "20H1", "20H2", "21H1", "21H2")
-    }
-    [PSCustomObject]@{
-        Version = "Windows 11"
-        Builds  = @("21H2")
-    }
-)
+BEGIN {
+    #---------------------------------------------------------[Initialisations]--------------------------------------------------------
 
-$Models = @()
+    Import-Module .\Packages\FileHandling\FileHandling.psm1 -Force
+    Import-Module .\Packages\SccmPackage\SccmPackage.psm1 -Force
+    Import-Module .\Packages\WindowsVersions\WindowsVersions.psm1 -Force
 
-#-----------------------------------------------------------[Functions]------------------------------------------------------------
+    #----------------------------------------------------------[Declarations]----------------------------------------------------------
+    $ListOfManufacturers = @()
 
-function Get-ManufacturersInformation {
-    <#
+    $DeploymentPlatforms = @("ConfigMgr - Standard Pkg", "ConfigMgr - Driver Pkg", "ConfigMgr - Standard Pkg(Pilot)", "MDT", "Both - ConfigMgr Driver Pkg & MDT",
+        "Both - CStandard Pkg & MDT", "Download Only", "Download & XML Generation")
+
+    $Architectures = @("x64", "x86")
+
+    $Models = @()
+
+    #-----------------------------------------------------------[Functions]------------------------------------------------------------
+
+    function Get-ManufacturersInformation {
+        <#
     .SYNOPSIS
         <Overview of script>
 
@@ -144,79 +121,81 @@ function Get-ManufacturersInformation {
         Get-ManufacturersInformation -Path "C:\Path\to\xml\folder"
     #>
 
-    #-----------------------------------------------------------[Parameters]-----------------------------------------------------------
+        #-----------------------------------------------------------[Parameters]-----------------------------------------------------------
 
-    param(
-        [string]$Path = ".\xml"
-    )
+        param(
+            [string]$Path = ".\xml"
+        )
 
-    BEGIN {
-        #---------------------------------------------------------[Initialisations]--------------------------------------------------------
+        BEGIN {
+            #---------------------------------------------------------[Initialisations]--------------------------------------------------------
 
 
-
-        #----------------------------------------------------------[Declarations]----------------------------------------------------------
+        
+            #----------------------------------------------------------[Declarations]----------------------------------------------------------
     
-        $Manufacturers = @()
-    }
-
-    PROCESS {
-
-        #-----------------------------------------------------------[Execution]------------------------------------------------------------
-        foreach ($File in $(Get-ChildItem -Path $Path -Filter "*.xml" | Select-Object FullName, Name)) {
-               
-            [xml]$data = Get-Content $($File.FullName) -raw
-
-            $CurrentManufacturer = [PSCustomObject]@{
-                "Manufacturer" = $($File.Name).split("_")[0];
-                "Drivers"      = @()
-            }
-
-            foreach ($driver in $($data.ManifestDrivers.drivers.Driver)) {
-                $CurrentManufacturer.Drivers += $driver
-            }
-
-            $Manufacturers += $CurrentManufacturer
-
+            $Manufacturers = @()
         }
-    }
 
-    END {
-        return $Manufacturers
+        PROCESS {
+
+            #-----------------------------------------------------------[Execution]------------------------------------------------------------
+            foreach ($File in $(Get-ChildItem -Path $Path -Filter "*.xml" | Select-Object FullName, Name)) {
+               
+                [xml]$data = Get-Content $($File.FullName) -raw
+
+                $CurrentManufacturer = [PSCustomObject]@{
+                    "Manufacturer" = $($File.Name).split("_")[0];
+                    "Drivers"      = @()
+                }
+
+                foreach ($driver in $($data.ManifestDrivers.drivers.Driver)) {
+                    $CurrentManufacturer.Drivers += $driver
+                }
+
+                $Manufacturers += $CurrentManufacturer
+
+            }
+        }
+
+        END {
+            return $Manufacturers
+        }
     }
 }
 
-#-----------------------------------------------------------[Execution]------------------------------------------------------------
+PROCESS {
+    #-----------------------------------------------------------[Execution]------------------------------------------------------------
 
-#$ListOfManufacturers = Get-ManufacturersInformation
+    #$ListOfManufacturers = Get-ManufacturersInformation
 
-#$(Get-ManufacturersInformation | select -ExpandProperty Drivers)
+    #$(Get-ManufacturersInformation | select -ExpandProperty Drivers)
 
-$Models = $ListOfManufacturers | Select-Object Manufacturer, @{N = "Models"; E = { $_.Drivers.SystemName } }
+    $Models = $ListOfManufacturers | Select-Object Manufacturer, @{N = "Models"; E = { $_.Drivers.SystemName } }
 
-$DriverPack = Find-DriverPack -DriverPacks $(Get-ManufacturersInformation)  -Manufacturer "Dell" -Model "Optiplex 5070" -Architecture "x64"
+    $DriverPack = Find-DriverPack -DriverPacks $(Get-ManufacturersInformation)  -Manufacturer "Dell" -Model "Optiplex 5070" -Architecture "x64"
 
-$DriverPack
+    #$CompressedFile = Start-DriverPackDownload -Driver $DriverPack
 
-#$CompressedFile = Start-DriverPackDownload -Driver $DriverPack
+    #Expand-DriverPack -CompressedFile $CompressedFile
 
-#Expand-DriverPack -CompressedFile $CompressedFile
+    #$ServerLocation = Move-DriverPack -Source "C:\temp\5070-win10-A08-J36D1" -Destination "\\mecmprod01\e$\Test"
 
-#$ServerLocation = Move-DriverPack -Source "C:\temp\5070-win10-A08-J36D1" -Destination "\\mecmprod01\e$\Test"
 
-$OS = if([string]::IsNullOrEmpty($DriverPack.OsBuilds)){$DriverPack.OSVersion}else{"$($DriverPack.OSVersion) $($DriverPack.OsBuilds)"}
+    $DriverPackageParams = @{
+        SiteCode     = $SiteCode;
+        Name         = "Drivers - $($DriverPack.Manufacturer) $($DriverPack.SystemName) $(ConvertFrom-BuildNumber -BuildNumber $($DriverPack.OsBuild)) - $OS $($DriverPack.OSArchitecture)";
+        Version      = $($DriverPack.Version);
+        Source       = $ServerLocation;
+        Manufacturer = $($DriverPack.Manufacturer);
+    }
 
-#$DriverPackageParams = @{
-#    SiteCode = $SiteCode;
-#    Name = "Drivers - $($DriverPack.Manufacturer) $($DriverPack.SystemName) - $OS $($DriverPack.OSArchitecture)";
-#    Version = $($DriverPack.Version);
-#    Source = $ServerLocation;
-#    Manufacturer = $($DriverPack.Manufacturer);
-#}
+    $DriverPackageParams
 
-#if($DistributePackage){
-#    $DriverPackageParams["Distribute"] = $true
-#    $DriverPackageParams["DistributionPoint"] = $DistributionPoints
-#}
+    #if($DistributePackage){
+    #    $DriverPackageParams["Distribute"] = $true
+    #    $DriverPackageParams["DistributionPoint"] = $DistributionPoints
+    #}
 
-#New-DriverPackage @DriverPackageParams
+    #New-DriverPackage @DriverPackageParams    
+}

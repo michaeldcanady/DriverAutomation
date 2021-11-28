@@ -1,4 +1,9 @@
-import-module $env:SMS_ADMIN_UI_PATH.Replace("bin\i386", "bin\ConfigurationManager.psd1") -force
+try {
+    import-module $env:SMS_ADMIN_UI_PATH.Replace("bin\i386", "bin\ConfigurationManager.psd1") -force
+}
+catch {
+
+}
 function New-DriverPackage {
     <#
     .SYNOPSIS

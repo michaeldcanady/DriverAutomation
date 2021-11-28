@@ -65,7 +65,7 @@ param(
     [Parameter(Mandatory = $false, HelpMessage = "Location to Store OEM Driver Package Xml until No Longer Needed.", Position = 1)]
     [Alias("TempFolder")]
     [ValidateUserDrive()]
-    [string]$XmlTempFolder = "C:\Git\DriverAutomation\xml\Temp",
+    [string]$XmlTempFolder = "C:\Github\DriverAutomation\xml\Temp",
     [Parameter(Mandatory = $false, HelpMessage = "Location to Store Log File.", Position = 1)]
     [string]$LogPath = "C:\Windows\Temp"
 )
@@ -215,22 +215,25 @@ BEGIN {
                 SystemID   = if ((-not [string]::IsNullOrEmpty($SystemName)) -and ($SystemID.GetType() -eq [object[]])) { $SystemID[1] }else { $SystemID }
                 Version    = $DriverPack.dellVersion
                 Path       = $("$BasePath/$($DriverPack.Path)")
-                OsBuilds   = ""
                 Algorithm  = $Hash.algorithm
                 Hash       = $Hash.$("#text")
             }
 
             if ($OsArch.GetType() -eq [object[]]) {
                 for ($i = 0; $i -lt $OsArch.count; $i++) {
+                    $OsVersion = $($DriverPack.SupportedOperatingSystems.OperatingSystem.Display.$("#cdata-section")[$i] -replace $($OsArch[$i]), "").Trim()
+                    $OsBuild = $(ConvertTo-BuildNumber -OperatingSystem "$OsVersion")
                     $drive1 = $drive.PsObject.Copy()
                     $drive1["OSArchitecture"] = $OsArch[$i]
-                    $drive1["OSVersion"] = $($DriverPack.SupportedOperatingSystems.OperatingSystem.Display.$("#cdata-section")[$i] -replace $($drive1.OSArchitecture), "").Trim()
+                    $drive1["OsBuild"] = $OsBuild
                     $Drivers += $drive1
                 }
             }
             else {
+                $OsVersion = $($DriverPack.SupportedOperatingSystems.OperatingSystem.Display.$("#cdata-section") -replace $($OsArch), "").Trim()
+                $OsBuild = $(ConvertTo-BuildNumber -OperatingSystem "$OsVersion")
                 $drive["OSArchitecture"] = $OsArch
-                $drive["OSVersion"] = $($DriverPack.SupportedOperatingSystems.OperatingSystem.Display.$("#cdata-section") -replace $($drive.OSArchitecture), "").Trim()
+                $drive["OsBuild"] = $OsBuild
                 $Drivers += $drive
             }
         }
@@ -260,7 +263,17 @@ BEGIN {
             $Os, $Build = $($DriverPacks[$i].OSName).split(",")
 
             $h = $HpDrivers.newdataset.hpclientdriverpackcatalog.softpaqlist.softpaq | ? { $_.Id -eq $DriverPacks[$i].SoftPaqId } | select Version, Url, $($Algorithm)
-    
+            
+            $Os = $($Os -replace $($DriverPacks[$i].Architecture), "").Trim()
+            
+            $Build = if ([string]::IsNullOrEmpty($Build)) { "" }else { $($Build).Trim() }
+
+            #write-host """$Os"""
+
+            #write-host """$Build"""
+
+            #$(ConvertTo-BuildNumber -OperatingSystem $Os -Version $Build)
+
             $Drivers += [hashtable]@{
                 SystemName     = $DriverPacks[$i].SystemName
                 SystemID       = $DriverPacks[$i].SystemId
@@ -268,8 +281,7 @@ BEGIN {
                 Version        = $h.Version
                 Url            = $h.Url
                 Hash           = $h.$($Algorithm)
-                OSVersion      = $($Os -replace $($DriverPacks[$i].Architecture), "").Trim()
-                OsBuilds       = if ([string]::IsNullOrEmpty($Build)) { "" }else { $($Build).Trim() }
+                OsBuild        = $(ConvertTo-BuildNumber -OperatingSystem $Os -Version $Build)
                 OSArchitecture = "x" + $($DriverPacks[$i].Architecture -replace "-Bit", "")
             }
     
@@ -279,7 +291,7 @@ BEGIN {
         }
     
         Write-Progress -Activity "Converting Hp Xml to Object" -Status "100% Complete:" -PercentComplete 100 -Completed
-    
+
         return @{
             baseLocation = "https://ftp.hp.com/pub/softpaq/"
             version      = $HpDrivers.NewDataSet.HPClientDriverPackCatalog.ToolVersion
