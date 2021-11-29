@@ -47,14 +47,6 @@
 param(
     [Parameter(Mandatory, ParameterSetName = "Specific", HelpMessage = "A Comma Seperated List, of Readied Manufacturer's, to Generate the Xml.", Position = 0, ValueFromPipeline)]
     [Alias("Vendors")]
-    [ValidateScript({
-            foreach ($Man in $_) {
-                if ($Man -in $($ManufacturerObjects.Name)) {
-                    return $true
-                }
-            }
-            throw "$_ is not valid, please use: $($ManufacturerObjects.Name)"
-        })]
     [string[]]$Manufacturers,
     [Parameter(Mandatory,
         ParameterSetName = "All",
@@ -191,65 +183,57 @@ BEGIN {
 
     function New-DellXml {
         param(
-            [string]$FilePath
+            [string]$FilePath,
+            [ValidateSet("MD5")]
+            [string]$Algorithm
         )
 
         [xml]$DellDrivers = Get-Content -Path $FilePath -Raw
 
+        $DellDriversObject = @{
+            BaseLocation = "https://$($DellDrivers.DriverPackManifest.baseLocation)"
+            Version      = $DellDrivers.DriverPackManifest.version
+        }
+
         $DriverPacks = $DellDrivers.driverpackmanifest.driverpackage
 
-        $BasePath = "https://" + $($DellDrivers.DriverPackManifest.baseLocation)
-
         $Drivers = @()
-
+    
         foreach ($DriverPack in $DriverPacks) {
 
-            $SystemName = $($DriverPack.SupportedSystems.Brand.Model.name)
-            $OsArch = $($DriverPack.SupportedOperatingSystems.OperatingSystem.osArch)
-            $SystemID = $DriverPack.SupportedSystems.Brand.Model.SystemID
+            $RawSystemName = @($DriverPack.SupportedSystems.Brand.Model.name)
+            $RawOsArch = @($DriverPack.SupportedOperatingSystems.OperatingSystem.osArch)
+            $RawSystemID = @($DriverPack.SupportedSystems.Brand.Model.SystemID)
+            $Hash = $DriverPack.Cryptography.Hash | Where-Object { $_.algorithm -eq $Algorithm }
+            $Version = $DriverPack.dellVersion
+            $Path = $("$($DellDriversObject.baseLocation)/$($DriverPack.Path)")
 
-            $Hash = $DriverPack.Cryptography.Hash | ? { $_.algorithm -eq "MD5" }
+            if ([string]::IsNullOrEmpty($RawSystemName)) { continue }
 
-            $drive = [hashtable]@{
-                SystemName = $(if ((-not [string]::IsNullOrEmpty($SystemName)) -and ($SystemName.GetType() -eq [object[]]) -and ($OsArch.GetType() -ne [object[]])) { $SystemName[0] }else { $SystemName })
-                SystemID   = if ((-not [string]::IsNullOrEmpty($SystemName)) -and ($SystemID.GetType() -eq [object[]])) { $SystemID[1] }else { $SystemID }
-                Version    = $DriverPack.dellVersion
-                Path       = $("$BasePath/$($DriverPack.Path)")
-                Algorithm  = $Hash.algorithm
-                Hash       = $Hash.$("#text")
-            }
+            for ($i = 0; $i -lt $RawSystemName.count; $i++) {
+                $SystemName = $RawSystemName[$i]
+                $SystemID = $RawSystemID[$i]
 
-            if ($OsArch.GetType() -eq [object[]]) {
-                for ($i = 0; $i -lt $OsArch.count; $i++) {
-                    $OsVersion = $($DriverPack.SupportedOperatingSystems.OperatingSystem.Display.$("#cdata-section")[$i] -replace $($OsArch[$i]), "").Trim()
-                    $OsBuild = $(ConvertTo-BuildNumber -OperatingSystem "$OsVersion")
-                    $drive1 = $drive.PsObject.Copy()
-                    $drive1["OSArchitecture"] = $OsArch[$i]
-                    $drive1["OsBuild"] = $OsBuild
-                    $Drivers += $drive1
+                for ($j = 0; $j -lt $RawOsArch.count; $j++) {
+                    $RawOsVersion = @($DriverPack.SupportedOperatingSystems.OperatingSystem.osCode)[$j]
+                    $OsVersion = $RawOsVersion.replace("Windows", "Windows ")
+                    $OsVersion = $OsVersion.replace("Vista", "Windows Vista")
+                    $OsVersion = $OsVersion.replace("XP", "Windows XP")
+                    $OsArch = $RawOsArch[$j]
+                    $Drivers += ConvertTo-CustomObject -SystemName $SystemName -SystemID $SystemID -Version $Version -Path $Path -OsVersion $OsVersion -OsBuild "" -OsArch $OsArch -Algorithm $($Hash.algorithm) -Hash $($Hash.$("#text"))
                 }
-            }
-            else {
-                $OsVersion = $($DriverPack.SupportedOperatingSystems.OperatingSystem.Display.$("#cdata-section") -replace $($OsArch), "").Trim()
-                $OsBuild = $(ConvertTo-BuildNumber -OperatingSystem "$OsVersion")
-                $drive["OSArchitecture"] = $OsArch
-                $drive["OsBuild"] = $OsBuild
-                $Drivers += $drive
-            }
+            }  
         }
+        $DellDriversObject["Drivers"] = $Drivers
 
-        return @{
-            baseLocation = $BasePath
-            version      = $DellDrivers.DriverPackManifest.version
-            drivers      = $Drivers
-        }
-
+        return $DellDriversObject
     }
 
     function New-HpXml {
         param(
             [string]$FilePath,
-            [string]$Algorithm = "MD5"
+            [ValidateSet("MD5")]
+            [string]$Algorithm
         )
     
         [xml]$HpDrivers = Get-Content -Path $FilePath
@@ -259,38 +243,35 @@ BEGIN {
         $Drivers = @()
     
         for ($i = 0; $i -lt $DriverPacks.count; $i++) {
-    
-            $Os, $Build = $($DriverPacks[$i].OSName).split(",")
 
-            $h = $HpDrivers.newdataset.hpclientdriverpackcatalog.softpaqlist.softpaq | ? { $_.Id -eq $DriverPacks[$i].SoftPaqId } | select Version, Url, $($Algorithm)
-            
-            $Os = $($Os -replace $($DriverPacks[$i].Architecture), "").Trim()
-            
-            $Build = if ([string]::IsNullOrEmpty($Build)) { "" }else { $($Build).Trim() }
+            #Cleaning and formating the Architecture as x64 or x86
+            $CleanedArch = $($($DriverPacks[$i].Architecture) -replace "-Bit", "")
 
-            #write-host """$Os"""
-
-            #write-host """$Build"""
-
-            #$(ConvertTo-BuildNumber -OperatingSystem $Os -Version $Build)
-
-            $Drivers += [hashtable]@{
-                SystemName     = $DriverPacks[$i].SystemName
-                SystemID       = $DriverPacks[$i].SystemId
-                Algorithm      = $Algorithm
-                Version        = $h.Version
-                Url            = $h.Url
-                Hash           = $h.$($Algorithm)
-                OsBuild        = $(ConvertTo-BuildNumber -OperatingSystem $Os -Version $Build)
-                OSArchitecture = "x" + $($DriverPacks[$i].Architecture -replace "-Bit", "")
+            $OsArch = if (-not $CleanedArch.StartsWith("x")) {
+                "x$CleanedArch"
             }
-    
+            else {
+                $CleanedArch
+            }
+            
+            # formating the Build/Os into two different variables and then cleaning it's formatting
+            $Os, $Build = $($DriverPacks[$i].OSName).split(",")
+            $Os = $($Os -replace $($DriverPacks[$i].Architecture), "").Trim()
+            $Build = if ([string]::IsNullOrEmpty($Build)) { "" }else { $($Build).Trim() }
+            $SystemName = $($($($($DriverPacks[$i].SystemName) -replace "HP", "") -replace "PC", "") -replace "&amp;", "/").Trim()
+
+            $SystemId = $($DriverPacks[$i].SystemId)
+
+            $h = $HpDrivers.newdataset.hpclientdriverpackcatalog.softpaqlist.softpaq | Where-Object { $_.Id -eq $DriverPacks[$i].SoftPaqId } | Select-Object Version, Url, $($Algorithm)
+
+            $Drivers += ConvertTo-CustomObject -SystemName $SystemName -SystemID $SystemId -Version $($h.Version) -Path $($h.Url) -OsVersion $Os -OsBuild $Build -OsArch $OsArch -Algorithm $Algorithm -Hash $h.$($Algorithm)
+
             $Percent = [int]$(($i / $($DriverPacks.count)) * 100)
     
-            Write-Progress -Activity "Converting Hp Xml to Object" -Status "$Percent% Complete:" -PercentComplete $Percent
+            #Write-Progress -Activity "Converting Hp Xml to Object" -Status "$Percent% Complete:" -PercentComplete $Percent
         }
     
-        Write-Progress -Activity "Converting Hp Xml to Object" -Status "100% Complete:" -PercentComplete 100 -Completed
+        #Write-Progress -Activity "Converting Hp Xml to Object" -Status "100% Complete:" -PercentComplete 100 -Completed
 
         return @{
             baseLocation = "https://ftp.hp.com/pub/softpaq/"
@@ -302,47 +283,101 @@ BEGIN {
 
     function New-LenovoXml {
         param(
-            [string]$FilePath
+            [string]$FilePath,
+            [ValidateSet("MD5")]
+            [string]$Algorithm,
+            [string]$Temp = "C:\Temp"
         )
 
         [xml]$LenovoDrivers = Get-Content -Path $FilePath -Raw
 
         $DriverPacks = $LenovoDrivers.ModelList.Model
 
+        $DellDriversObject = @{
+            BaseLocation = "https://download.lenovo.com/"
+            Version      = "N/A"
+        }
+
         $Drivers = @()
 
-        $BasePath = "https://download.lenovo.com/"
+        Write-Progress -Activity "Converting Lenovo Xml to Object" -Status "0% Complete:" -PercentComplete 0 -CurrentOperation "LenovoGenObject"
+
+        $total = $DriverPacks.count
+
+        $i = 1
+
+        $Start_Time = Get-Date
+
+        Start-Sleep 1
 
         foreach ($DriverPack in $DriverPacks) {
+            foreach ($OsBuild in $($DriverPack.SCCM)) {
+                $End_Time = Get-Date
+                $PackagesPerSecond = $($total / ($i / ($End_Time - $Start_Time).seconds))
+                [int]$percent = $i / $total
+                
+                $OsVersion = "Windows 10"
+                $Build = if ($($OsBuild.version) -eq "*") { "" }else { $OsBuild.version }
+                $DownloadLink = $($OsBuild.$("#text"))
 
-            foreach ($Version in $($DriverPack.SCCM.Version)) {
-            
-                foreach ($DowloadLink in $DriverPack.SCCM.$("#text")) {
-                    $Info = $($DowloadLink.split("_"))
-                    if ($Version -in $Info) {
-                        if (("win1064" -in $Info) -or "w1064" -in $Info) {
-                            $OsVersion = "Windows 10"
-                            $OsArchitecture = "64"
-                        }
-                        $Drivers += [hashtable]@{
-                            SystemName     = $DriverPack.name
-                            SystemID       = "N/A"
-                            Version        = $($Info[-1]).Trim(".exe")
-                            Path           = $DowloadLink
-                            OSBuild        = $(ConvertTo-BuildNumber -OperatingSystem "$OsVersion" -Version "$Version")
-                            OSArchitecture = "x" + $OsArchitecture
-                            Algorithm      = "N/A"
-                            Hash           = "N/A"
-                        }
-                    }
-                }
+                $Version = $($DownloadLink.split("_")[-1]).Trim(".exe")
+
+
+                $Drivers += ConvertTo-CustomObject -SystemName $($DriverPack.name) -SystemID "N/A" -Version $Version -Path $DownloadLink -OsVersion $OsVersion -OsBuild $Build -OsArch $OsArch -Algorithm "N/A" -Hash "N/A" 
             }
+            $i++
+            Write-Progress -Activity "Converting Lenovo Xml to Object" -Status "$percent% Complete:" -PercentComplete $percent -CurrentOperation "LenovoGenObject" -SecondsRemaining $PackagesPerSecond
         }
-        return @{
-            baseLocation = $BasePath
-            version      = "N/A"
-            drivers      = $Drivers
+        Write-Progress -Activity "Converting Lenovo Xml to Object" -Status "100% Complete:" -Completed -CurrentOperation "LenovoGenObject"
+        $DellDriversObject["Drivers"] = $Drivers
+
+        return $DellDriversObject
+    }
+
+    function Get-FileHash {
+        param(
+            [string]$FilePath,
+            [string]$Temp = "C:\Temp"
+        )
+
+
+        Start-BitsTransfer -Source $FilePath -Destination $Temp
+
+        $FileName = Split-Path -Path $FilePath -Leaf
+
+        $TempPath = "$Temp\$FileName"
+
+        $Hash = Get-FileHash -LiteralPath $TempPath -Algorithm $Algorithm
+
+        Remove-Item -Path $TempPath
+
+        return $Hash
+    }
+
+    function ConvertTo-CustomObject {
+        param(
+            [string]$SystemName,
+            [string]$SystemID = "N/A",
+            [string]$Version,
+            [string]$Path,
+            [string]$OsVersion,
+            [string]$OsBuild,
+            [string]$OsArch,
+            [string]$Algorithm = "N/A",
+            [string]$Hash = "N/A"
+        )
+
+        return [hashtable]@{
+            SystemName     = $SystemName
+            SystemID       = $SystemID
+            Version        = $Version
+            Path           = $Path
+            OSBuild        = $(ConvertTo-BuildNumber -OperatingSystem "$OsVersion" -Version "$OsBuild")
+            OSArchitecture = $OsArch
+            Algorithm      = $Algorithm
+            Hash           = $Hash
         }
+
     }
 
     function Get-DriverXml {
@@ -425,8 +460,14 @@ PROCESS {
         New-Item $XmlTempFolder
     }
 
+    $Total = $($Manufacturers.Count)
+    $i = 0
+
+    #Write-Progress -Activity "Generating Xmls for Manufacturers:" -Status "0% Complete" -PercentComplete 0 -CurrentOperation "Generating Xml" -Id 1
+
     # Iterate through all the provided manufactures to generate the xml
     foreach ($Manufacturer in $Manufacturers) {
+        #Write-Progress -Activity "Generating Xmls for Manufacturers:" -Status "$($i/$Total)% Complete" -PercentComplete $($i / $Total) -CurrentOperation "Generating Xml" -Id 1
         
         $ManParams = @{
             Source      = $($ManufacturerObjects | Where-Object { $_.Name -eq $Manufacturer } | Select-Object -ExpandProperty Source);
@@ -448,15 +489,15 @@ PROCESS {
         switch ($Manufacturer) {
             "Dell" {
                 Write-Debug "Running New-DellXml with the filepath param of $CurrentDir"
-                $Xml = New-DellXml -FilePath $CurrentDir
+                $Xml = New-DellXml -FilePath $CurrentDir -Algorithm MD5
             }
             "HP" {
                 Write-Debug "Running New-HpXml with the filepath param of $CurrentDir"
-                $Xml = New-HpXml -FilePath $CurrentDir
+                $Xml = New-HpXml -FilePath $CurrentDir -Algorithm MD5
             }
             "Lenovo" {
                 Write-Debug "Running New-LenovoXml with the filepath param of $CurrentDir"
-                $Xml = New-LenovoXml -FilePath $CurrentDir
+                $Xml = New-LenovoXml -FilePath $CurrentDir -Algorithm MD5
             }
             default {
                 Throw "$_ is an unexpected manufacturer. Please append "
@@ -475,6 +516,8 @@ PROCESS {
 
         Out-File -InputObject $FormatedDaObject -FilePath $(Join-Path -Path $Destination -ChildPath "$($Manufacturer)_Products.xml")
     }
+
+    #Write-Progress -Activity "Generating Xmls for Manufacturers:" -Status "100% Complete" -Completed -CurrentOperation "Generating Xml" -Id 1
 }
 
 END {

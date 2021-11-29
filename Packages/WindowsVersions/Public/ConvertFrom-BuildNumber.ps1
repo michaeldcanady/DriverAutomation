@@ -26,7 +26,7 @@ $global:OperationSystemBuilds = @(
     [PSCustomObject]@{
         PeBuild   = "N/A";
         PeVersion = "N/A";
-        Version   = "Windows 10 20H1";
+        Version   = "Windows 10 2004";
         Build     = "10.0.19041";
     }
     [PSCustomObject]@{
@@ -144,9 +144,10 @@ function ConvertFrom-BuildNumber {
         [string]$BuildNumber
     )
 
-    #$BuildNumber
-
-    #Write-Output $($global:OperationSystemBuilds)
-
-    return $global:OperationSystemBuilds | Where-Object { $_.Build -eq "$BuildNumber" } | Select-Object -ExpandProperty Version
+    if ($OperatingSystem -like "*PE*") {
+        return $global:OperationSystemBuilds | Where-Object { $_.PeBuild -eq $BuildNumber } | Select-Object -ExpandProperty PeVersion
+    }
+    else {
+        return $global:OperationSystemBuilds | Where-Object { $_.Build -eq "$BuildNumber" } | Select-Object -ExpandProperty Version
+    }
 }
