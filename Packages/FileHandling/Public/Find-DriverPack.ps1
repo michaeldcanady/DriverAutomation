@@ -38,7 +38,10 @@ function Find-DriverPack {
         [string]$Model,
 
         [Parameter(Mandatory)]
-        [ValidateSet("x86","x64")]
+        [string]$OsBuild,
+
+        [Parameter(Mandatory)]
+        [ValidateSet("x86", "x64")]
         [string]$Architecture
     )
 
@@ -53,5 +56,6 @@ function Find-DriverPack {
     #-----------------------------------------------------------[Execution]------------------------------------------------------------
 
     $Man = $DriverPacks | ? { ($_.Manufacturer -eq $Manufacturer) } | select -ExpandProperty Drivers
-    return $Man | ? { ($_.SystemName -eq $Model) -and ($_.OSArchitecture -eq $Architecture) } | Add-Member -NotePropertyName "Manufacturer" -NotePropertyValue $Manufacturer -PassThru
+
+    return $Man | ? { ($_.SystemName -eq $Model) -and ($_.OSArchitecture -eq $Architecture) -and ($_.OsBuild -eq $OsBuild) } | Add-Member -NotePropertyName "Manufacturer" -NotePropertyValue $Manufacturer -PassThru | Sort-Object -Unique
 }

@@ -1,10 +1,4 @@
-try {
-    import-module $env:SMS_ADMIN_UI_PATH.Replace("bin\i386", "bin\ConfigurationManager.psd1") -force
-}
-catch {
-
-}
-function New-DriverPackage {
+function New-StandardPackage {
     <#
     .SYNOPSIS
         <Overview of script>
@@ -45,10 +39,10 @@ function New-DriverPackage {
         Purpose/Change: Initial Script Development
   
     .EXAMPLE
-        New-DriverPackage -SiteCode ABC -Name PackageName -Version 1.0 -Source "\\Path\to\source\drive"
-        New-DriverPackage -SiteCode ABC -Name PackageName -Description "Wonderful Package" -Manufacturer "Me" -Version 1.0 -Source "\\Path\to\source\drive"
-        New-DriverPackage -SiteCode ABC -Name PackageName -Version 1.0 -Source "\\Path\to\source\drive" -Distribute -DistributionPoint "PointOne.CORP.CONTOSO.COM", "PointTwo.CORP.CONTOSO.COM"
-        New-DriverPackage -SiteCode ABC -Name PackageName -Description "Wonderful Package" -Manufacturer "Me" -Version 1.0 -Source "\\Path\to\source\drive" -Distribute -DistributionPoint "PointOne.CORP.CONTOSO.COM", "PointTwo.CORP.CONTOSO.COM"
+        New-StandardPackage -SiteCode ABC -Name PackageName -Version 1.0 -Source "\\Path\to\source\drive"
+        New-StandardPackage -SiteCode ABC -Name PackageName -Description "Wonderful Package" -Manufacturer "Me" -Version 1.0 -Source "\\Path\to\source\drive"
+        New-StandardPackage -SiteCode ABC -Name PackageName -Version 1.0 -Source "\\Path\to\source\drive"
+        New-StandardPackage -SiteCode ABC -Name PackageName -Description "Wonderful Package" -Manufacturer "Me" -Version 1.0 -Source "\\Path\to\source\drive"
     #>
     
     #-----------------------------------------------------------[Parameters]-----------------------------------------------------------
@@ -64,11 +58,7 @@ function New-DriverPackage {
         [Parameter(Mandatory)]
         [string]$Version,
         [Parameter(Mandatory)]
-        [string]$Source,
-        [Parameter(Mandatory, ParameterSetName = "Distribute")]
-        [switch]$Distribute,
-        [Parameter(Mandatory, ParameterSetName = "Distribute")]
-        [string[]]$DistributionPoint
+        [string]$Source
     )
 
     BEGIN {
@@ -93,16 +83,11 @@ function New-DriverPackage {
         ## Create the Package ##
         Write-Verbose "Creating $Name Package"
         $Package = New-CMPackage @PackageParams
-    
-        if ($Distribute) {
-            Write-Verbose "Distributing $Name to $($DistributionPoint -join ",")"
-            Start-CMContentDistribution -PackageName $Name -DistributionPointName $DistributionPoint
-        }
     }
 
     END {
         Write-Verbose "Returning back to previous location"
         Pop-Location
-        return $Package.PackageID
+        return $Package.Name
     }
 }

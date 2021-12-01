@@ -19,6 +19,11 @@
     Author:         Michael Canady
     Creation Date:  11/24/2021
     Purpose/Change: Initial Script Development
+
+    Version:        1.0.1.0
+    Author:         Michael Canady
+    Creation Date:  11/30/2021
+    Purpose/Change: Adding Parameters (All), Structing Process Block
   
 .EXAMPLE
     BackEndv2
@@ -27,51 +32,72 @@
 #-----------------------------------------------------------[Parameters]-----------------------------------------------------------
 [CmdletBinding()]
 param(
-    [string]$Manufacturer,
-    [string]$Model,
-    [ValidateSet("x86", "x64")]
-    [string]$Architecture,
-    [string]$OS,
-
-    [Parameter(Mandatory, ParameterSetName = "ConfigMgrDistribute")]
-    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgrDistribute")]
+    [Parameter(ParameterSetName = "Download")]
+    [Parameter(ParameterSetName = "ConfigFile")]
+    [Parameter(ParameterSetName = "ConfigMgr")]
+    [switch]$NoGui,
+    [Parameter(Mandatory, ParameterSetName = "Download")]
+    [Parameter(Mandatory, ParameterSetName = "ConfigFile")]
     [Parameter(Mandatory, ParameterSetName = "ConfigMgr")]
-    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgr")]
-    [ValidateSet("Standard Pkg", "Driver Pkg")]
-    [string]$ConfigMgr,
-
-    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgrDistribute")]
-    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgr")]
-    [Parameter(Mandatory, ParameterSetName = "MDT")]
-    [switch]$MDT,
-
-    [Parameter(Mandatory, ParameterSetName = "DownloadOnly")]
-    [Parameter(Mandatory, ParameterSetName = "Generate&Download")]
-    [switch]$Download,
-
-    [Parameter(Mandatory, ParameterSetName = "GenerateXml")]
-    [Parameter(Mandatory, ParameterSetName = "Generate&Download")]
-    [switch]$GenerateXml,
-
-    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgrDistribute")]
-    [Parameter(Mandatory, ParameterSetName = "ConfigMgrDistribute")]
+    [ValidateSet("Dell", "Hp", "Lenovo")]
+    [string]
+    $Manufacturer,
+    [Parameter(Mandatory, ParameterSetName = "Download")]
+    [Parameter(Mandatory, ParameterSetName = "ConfigFile")]
     [Parameter(Mandatory, ParameterSetName = "ConfigMgr")]
-    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgr")]
-    [string]$SiteCode,
-
-    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgrDistribute")]
-    [Parameter(Mandatory, ParameterSetName = "ConfigMgrDistribute")]
+    [string]
+    $Model,
+    [Parameter(Mandatory, ParameterSetName = "Download")]
+    [Parameter(Mandatory, ParameterSetName = "ConfigFile")]
     [Parameter(Mandatory, ParameterSetName = "ConfigMgr")]
-    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgr")]
-    [string]$SiteServer,
-
-    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgrDistribute")]
-    [Parameter(Mandatory, ParameterSetName = "ConfigMgrDistribute")]
-    [switch]$DistributePackage,
-
-    [Parameter(Mandatory, ParameterSetName = "MDT&ConfigMgrDistribute")]
-    [Parameter(Mandatory, ParameterSetName = "ConfigMgrDistribute")]
-    [string[]]$DistributionPoint
+    [ValidateSet("Windows 10", "Windows 11")]
+    [string]
+    $OsVersion,
+    [Parameter(Mandatory, ParameterSetName = "Download")]
+    [Parameter(Mandatory, ParameterSetName = "ConfigFile")]
+    [Parameter(Mandatory, ParameterSetName = "ConfigMgr")]
+    [AllowEmptyString()]
+    [string]
+    $Build,
+    [Parameter(Mandatory, ParameterSetName = "Download")]
+    [Parameter(Mandatory, ParameterSetName = "ConfigFile")]
+    [Parameter(Mandatory, ParameterSetName = "ConfigMgr")]
+    [string]
+    $Architecture,
+    [Parameter(Mandatory,
+        ParameterSetName = "Download")]
+    [switch]
+    $DownloadOnly,
+    [Parameter(Mandatory,
+        ParameterSetName = "ConfigFile")]
+    [switch]
+    $FromConfig,
+    [Parameter(Mandatory,
+        ParameterSetName = "ConfigMgr")]
+    [switch]
+    $ConfigMgr,
+    [Parameter(Mandatory,
+        ParameterSetName = "ConfigMgr")]
+    [ValidatePattern('(?=^.{1,254}$)(^(?:(?!\d+\.)[a-zA-Z0-9_\-]{1,63}\.?)+(?:[a-zA-Z]{2,})$)')]
+    [string]
+    $SiteServer,
+    [Parameter(Mandatory,
+        ParameterSetName = "ConfigMgr")]
+    [ValidateLength(1, 3)]
+    [string]
+    $SiteCode,
+    [Parameter(Mandatory,
+        ParameterSetName = "ConfigMgr")]
+    [string]
+    $ServerStorage,
+    [Parameter(Mandatory,
+        ParameterSetName = "ConfigMgr")]
+    [ValidateSet("Driver", "Standard")]
+    [string]
+    $PkgType,
+    [Parameter(ParameterSetName = "ConfigMgr")]
+    [switch]
+    $DistributePackage
 )
 
 BEGIN {
@@ -81,17 +107,7 @@ BEGIN {
     Import-Module .\Packages\SccmPackage\SccmPackage.psm1 -Force
     Import-Module .\Packages\WindowsVersions\WindowsVersions.psm1 -Force
 
-    #----------------------------------------------------------[Declarations]----------------------------------------------------------
-    $ListOfManufacturers = @()
-
-    $DeploymentPlatforms = @("ConfigMgr - Standard Pkg", "ConfigMgr - Driver Pkg", "ConfigMgr - Standard Pkg(Pilot)", "MDT", "Both - ConfigMgr Driver Pkg & MDT",
-        "Both - CStandard Pkg & MDT", "Download Only", "Download & XML Generation")
-
-    $Architectures = @("x64", "x86")
-
-    $Models = @()
-
-    #-----------------------------------------------------------[Functions]------------------------------------------------------------
+    #----------------------------------------------------------[Functions]-------------------------------------------------------------
 
     function Get-ManufacturersInformation {
         <#
@@ -162,40 +178,64 @@ BEGIN {
             return $Manufacturers
         }
     }
-}
 
-PROCESS {
+    #----------------------------------------------------------[Declarations]----------------------------------------------------------
+    $ListOfManufacturers = Get-ManufacturersInformation
+    $ListOfManufacturers = @()
+
+    $DeploymentPlatforms = @("ConfigMgr - Standard Pkg", "ConfigMgr - Driver Pkg", "ConfigMgr - Standard Pkg(Pilot)", "MDT", "Both - ConfigMgr Driver Pkg & MDT",
+        "Both - CStandard Pkg & MDT", "Download Only", "Download & XML Generation")
+
+    $Architectures = @("x64", "x86")
+
     #-----------------------------------------------------------[Execution]------------------------------------------------------------
-
-    #$ListOfManufacturers = Get-ManufacturersInformation
-
-    #$(Get-ManufacturersInformation | select -ExpandProperty Drivers)
 
     $Models = $ListOfManufacturers | Select-Object Manufacturer, @{N = "Models"; E = { $_.Drivers.SystemName } }
 
-    $DriverPack = Find-DriverPack -DriverPacks $(Get-ManufacturersInformation)  -Manufacturer "Dell" -Model "Optiplex 5070" -Architecture "x64"
+    $SelectedBuild = ConvertTo-BuildNumber -OperatingSystem $OsVersion -Version $Build
+}
 
-    #$CompressedFile = Start-DriverPackDownload -Driver $DriverPack
+PROCESS {
 
-    #Expand-DriverPack -CompressedFile $CompressedFile
+    #region NO GUI
+    if (-not $Gui) {
+        $DriverPack = Find-DriverPack -DriverPacks $(Get-ManufacturersInformation)  -Manufacturer $Manufacturer -Model $Model -OsBuild $SelectedBuild -Architecture $Architecture
 
-    #$ServerLocation = Move-DriverPack -Source "C:\temp\5070-win10-A08-J36D1" -Destination "\\mecmprod01\e$\Test"
+        $CompressedFile = Start-DriverPackDownload -Driver $DriverPack
 
+        $UncompressedFile = Expand-DriverPack -CompressedFile $CompressedFile
 
-    $DriverPackageParams = @{
-        SiteCode     = $SiteCode;
-        Name         = "Drivers - $($DriverPack.Manufacturer) $($DriverPack.SystemName) $(ConvertFrom-BuildNumber -BuildNumber $($DriverPack.OsBuild)) - $OS $($DriverPack.OSArchitecture)";
-        Version      = $($DriverPack.Version);
-        Source       = $ServerLocation;
-        Manufacturer = $($DriverPack.Manufacturer);
+        if ($ConfigMgr) {
+            $ServerLocation = Move-DriverPack -Source $UncompressedFile -Destination $ServerStorage
+        
+            $DriverPackageParams = @{
+                SiteCode     = $SiteCode;
+                Name         = "Drivers - $($DriverPack.Manufacturer) $($DriverPack.SystemName) - $(ConvertFrom-BuildNumber -BuildNumber $($DriverPack.OsBuild)) $($DriverPack.OSArchitecture)";
+                Version      = $($DriverPack.Version);
+                Source       = $ServerLocation;
+                Manufacturer = $($DriverPack.Manufacturer);
+            }
+    
+            $DriverPackageParams
+    
+            $PackageName = switch ($PkgType) {
+                "Driver" {
+                    $DriverPackageParams["Model"] = $($DriverPack.SystemName)
+                    New-DriverPackage @DriverPackageParams
+                }
+                "Standard" {
+                    New-StandardPackage @DriverPackageParams
+                }
+            }
+    
+            if ($DistributePackage) {
+                Write-Verbose "Distributing $Name to $($DistributionPoint -join ",")"
+                Start-CMContentDistribution -PackageName $PackageName -DistributionPointName $DistributionPoints
+            }
+        }
+        elseif ($DownloadOnly) {
+            return $UncompressedFile
+        }
     }
-
-    $DriverPackageParams
-
-    #if($DistributePackage){
-    #    $DriverPackageParams["Distribute"] = $true
-    #    $DriverPackageParams["DistributionPoint"] = $DistributionPoints
-    #}
-
-    #New-DriverPackage @DriverPackageParams    
+    #endregion
 }

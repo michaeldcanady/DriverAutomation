@@ -97,8 +97,14 @@
 	</xs:complexType>
 </xs:schema>
 
-<HPClientDriverPackCatalog SchemaVersion="1.0.0.0" ToolVersion="1.0.0.0" DateReleased="2021-11-18" >
+<HPClientDriverPackCatalog SchemaVersion="1.0.0.0" ToolVersion="1.0.0.0" DateReleased="2021-11-27" >
 <OSList>
+  <OS>
+    <Name>Windows 11 64-bit, 21H2</Name>
+    <ShortName>Windows 11 64-bit, 21H2</ShortName>
+    <Bitness>64-bit</Bitness>
+    <OSId>4298</OSId>
+  </OS>
   <OS>
     <Name>Windows 10 64-bit, 21H1</Name>
     <ShortName>Windows 10 64-bit, 21H1</ShortName>
@@ -4713,59 +4719,59 @@
     <CvaTitle>HP Elite Slice G2 Windows 10 x64 Driver Pack</CvaTitle>
   </SoftPaq>
   <SoftPaq>
-    <Id>sp135571</Id>
+    <Id>sp135906</Id>
     <Name>HP Z6/Z8 Windows 10 x64 Driver Pack</Name>
-    <Version>7.00 A 1</Version>
+    <Version>8.00 A 1</Version>
     <Category>Manageability - Driver Pack</Category>
-    <DateReleased>9/3/2021 12:00:00 AM</DateReleased>
-    <Url>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135571.exe</Url>
-    <Size>925848352</Size>
-    <MD5>1fb13d8149271d87bf34c0c46162899f</MD5>
-    <SHA256>158BEE12AF4DE9465F39BC1753E56D7C786A1C7134BCEBE44CBC0380F769E347</SHA256>
-    <CvaFileUrl>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135571.cva</CvaFileUrl>
-    <ReleaseNotesUrl>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135571.html</ReleaseNotesUrl>
+    <DateReleased>10/15/2021 12:00:00 AM</DateReleased>
+    <Url>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135906.exe</Url>
+    <Size>1057421616</Size>
+    <MD5>3adee67255d26efbf1369bcf17eabd8f</MD5>
+    <SHA256>67C1A139A20770641097D23C7BB67AF87665F34172A9BFD9D7713EAFE1D7E0DE</SHA256>
+    <CvaFileUrl>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135906.cva</CvaFileUrl>
+    <ReleaseNotesUrl>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135906.html</ReleaseNotesUrl>
     <CvaTitle>HP Z6/Z8 Windows 10 x64 Driver Pack</CvaTitle>
   </SoftPaq>
   <SoftPaq>
-    <Id>sp135572</Id>
+    <Id>sp135907</Id>
     <Name>HP Z4G4 Windows 10 x64 Driver Pack</Name>
-    <Version>7.00 A 1</Version>
+    <Version>8.00 A 1</Version>
     <Category>Manageability - Driver Pack</Category>
-    <DateReleased>9/3/2021 12:00:00 AM</DateReleased>
-    <Url>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135572.exe</Url>
-    <Size>924420424</Size>
-    <MD5>91c98d5c0da4dc21c7ef775739f8abfd</MD5>
-    <SHA256>6061E247AA2D65935C2146D9EA3E808B682EA7E07B1E629984E5AB32E997A881</SHA256>
-    <CvaFileUrl>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135572.cva</CvaFileUrl>
-    <ReleaseNotesUrl>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135572.html</ReleaseNotesUrl>
+    <DateReleased>10/15/2021 12:00:00 AM</DateReleased>
+    <Url>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135907.exe</Url>
+    <Size>1056018224</Size>
+    <MD5>2c9c4d4af5276668ff23e6e40c29de05</MD5>
+    <SHA256>576FBB2C3DCD480835F94CABB59AC93BB5887F31AA3BB941918836412C8253A7</SHA256>
+    <CvaFileUrl>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135907.cva</CvaFileUrl>
+    <ReleaseNotesUrl>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135907.html</ReleaseNotesUrl>
     <CvaTitle>HP Z4G4 Windows 10 x64 Driver Pack</CvaTitle>
   </SoftPaq>
   <SoftPaq>
-    <Id>sp135573</Id>
+    <Id>sp135909</Id>
     <Name>HP Z2G8 Windows 10 x64 Driver Pack</Name>
-    <Version>2.00 A 1</Version>
+    <Version>3.00 A 1</Version>
     <Category>Manageability - Driver Pack</Category>
-    <DateReleased>9/3/2021 12:00:00 AM</DateReleased>
-    <Url>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135573.exe</Url>
-    <Size>1550102672</Size>
-    <MD5>8f8ac179684bc8a7386fa78c56cd1383</MD5>
-    <SHA256>A8103615086E161CA202729A101CABC59A3037613419D2D87EA3737F09E2ED16</SHA256>
-    <CvaFileUrl>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135573.cva</CvaFileUrl>
-    <ReleaseNotesUrl>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135573.html</ReleaseNotesUrl>
+    <DateReleased>10/15/2021 12:00:00 AM</DateReleased>
+    <Url>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135909.exe</Url>
+    <Size>1665735408</Size>
+    <MD5>ce13a0061efd1271421288c8df95beb8</MD5>
+    <SHA256>852B8842F8A51995A637CDF31EC9430FFA38B105D526E4B040393D67C2E4E23D</SHA256>
+    <CvaFileUrl>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135909.cva</CvaFileUrl>
+    <ReleaseNotesUrl>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135909.html</ReleaseNotesUrl>
     <CvaTitle>HP Z2G8 Windows 10 x64 Driver Pack</CvaTitle>
   </SoftPaq>
   <SoftPaq>
-    <Id>sp135574</Id>
+    <Id>sp135910</Id>
     <Name>HP Z2G5 Windows 10 x64 Driver Pack</Name>
-    <Version>4.00 A 1</Version>
+    <Version>5.00 A 1</Version>
     <Category>Manageability - Driver Pack</Category>
-    <DateReleased>9/3/2021 12:00:00 AM</DateReleased>
-    <Url>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135574.exe</Url>
-    <Size>1368355216</Size>
-    <MD5>1db5e302a887478827b171613b29e61c</MD5>
-    <SHA256>692ED58AFD9E0FF02CC43AFF70121221FC2A1E4D345F4658A2B67B8F43CD6360</SHA256>
-    <CvaFileUrl>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135574.cva</CvaFileUrl>
-    <ReleaseNotesUrl>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135574.html</ReleaseNotesUrl>
+    <DateReleased>10/15/2021 12:00:00 AM</DateReleased>
+    <Url>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135910.exe</Url>
+    <Size>1499518472</Size>
+    <MD5>2225fefc94e3dd69e7531d4513737728</MD5>
+    <SHA256>CFDC1182F8138F18771251F0A7B4D8AED30527F937A1611C03098AFF7F5CEB3B</SHA256>
+    <CvaFileUrl>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135910.cva</CvaFileUrl>
+    <ReleaseNotesUrl>https://ftp.hp.com/pub/softpaq/sp135501-136000/sp135910.html</ReleaseNotesUrl>
     <CvaTitle>HP Z2G5 Windows 10 x64 Driver Pack</CvaTitle>
   </SoftPaq>
   <SoftPaq>
@@ -11082,7 +11088,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8236,82eb</SystemId>
+    <SystemId>82eb,8236</SystemId>
     <SystemName>HP EliteBook 745 G4 Notebook PC</SystemName>
     <OSName>Windows 7 64-bit</OSName>
     <OSId>4059</OSId>
@@ -11452,7 +11458,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8265,835b</SystemId>
+    <SystemId>835b,8265</SystemId>
     <SystemName>HP EliteDesk 705 G3 Small Form Factor PC</SystemName>
     <OSName>Windows 7 64-bit</OSName>
     <OSId>4059</OSId>
@@ -11462,7 +11468,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8055,8056</SystemId>
+    <SystemId>8056,8055</SystemId>
     <SystemName>HP EliteDesk 800 35W G2 Desktop Mini PC</SystemName>
     <OSName>Windows 7 64-bit</OSName>
     <OSId>4059</OSId>
@@ -11702,7 +11708,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8057,8058</SystemId>
+    <SystemId>8058,8057</SystemId>
     <SystemName>HP EliteOne 800 G2 23-inch Non-Touch All-in-One PC</SystemName>
     <OSName>Windows 7 64-bit</OSName>
     <OSId>4059</OSId>
@@ -11712,7 +11718,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8057,8058</SystemId>
+    <SystemId>8058,8057</SystemId>
     <SystemName>HP EliteOne 800 G2 23-inch Touch All-in-One PC</SystemName>
     <OSName>Windows 7 64-bit</OSName>
     <OSId>4059</OSId>
@@ -11742,7 +11748,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>929C,829b,829c</SystemId>
     <SystemName>HP EliteOne 800 G3 23.8-inch Non-Touch All-in-One PC (ENERGY STAR)</SystemName>
     <OSName>Windows 7 64-bit</OSName>
     <OSId>4059</OSId>
@@ -11882,7 +11888,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>823c,823e</SystemId>
+    <SystemId>823e,823c</SystemId>
     <SystemName>HP ProBook 455 G4 Notebook PC</SystemName>
     <OSName>Windows 7 64-bit</OSName>
     <OSId>4059</OSId>
@@ -11912,7 +11918,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>1993,1994,2101,2102</SystemId>
+    <SystemId>2102,2101,1993,1994</SystemId>
     <SystemName>HP ProBook 640 G1 Notebook PC</SystemName>
     <OSName>Windows 7 64-bit</OSName>
     <OSId>4059</OSId>
@@ -11962,7 +11968,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>1993,2101</SystemId>
+    <SystemId>2101,1993</SystemId>
     <SystemName>HP ProBook 650 G1 Notebook PC</SystemName>
     <OSName>Windows 7 64-bit</OSName>
     <OSId>4059</OSId>
@@ -12022,7 +12028,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>82a1,846e,82a4</SystemId>
     <SystemName>HP ProDesk 400 G4 Microtower PC</SystemName>
     <OSName>Windows 7 64-bit</OSName>
     <OSId>4059</OSId>
@@ -12042,7 +12048,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>846e,82a4,82a1</SystemId>
     <SystemName>HP ProDesk 480 G4 Microtower PC</SystemName>
     <OSName>Windows 7 64-bit</OSName>
     <OSId>4059</OSId>
@@ -12172,7 +12178,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829d,82b3</SystemId>
+    <SystemId>82b3,829d</SystemId>
     <SystemName>HP ProDesk 680 G3 Microtower PC</SystemName>
     <OSName>Windows 7 64-bit</OSName>
     <OSId>4059</OSId>
@@ -12282,7 +12288,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>82bf,82c0</SystemId>
+    <SystemId>82c0,82bf</SystemId>
     <SystemName>HP Z2 Mini G3 Workstation</SystemName>
     <OSName>Windows 7 64-bit</OSName>
     <OSId>4059</OSId>
@@ -12382,7 +12388,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>0ae4,0b4c</SystemId>
+    <SystemId>0b4c,0ae4</SystemId>
     <SystemName>HP Z400 Workstation</SystemName>
     <OSName>Windows 7 64-bit</OSName>
     <OSId>4059</OSId>
@@ -13152,7 +13158,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8057,8058</SystemId>
+    <SystemId>8058,8057</SystemId>
     <SystemName>HP EliteOne 800 G2 23-inch Non-Touch All-in-One PC</SystemName>
     <OSName>Windows 8.1 64-bit</OSName>
     <OSId>4158</OSId>
@@ -13312,7 +13318,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>1993,1994,2101,2102</SystemId>
+    <SystemId>1994,2102,2101,1993</SystemId>
     <SystemName>HP ProBook 640 G1 Notebook PC</SystemName>
     <OSName>Windows 8.1 64-bit</OSName>
     <OSId>4158</OSId>
@@ -13702,7 +13708,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>81c3,8396</SystemId>
+    <SystemId>8396,81c3</SystemId>
     <SystemName>HP Elite Slice for Meeting Rooms</SystemName>
     <OSName>Windows 10 64-bit, 1607</OSName>
     <OSId>4243</OSId>
@@ -14142,7 +14148,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8265,835b</SystemId>
+    <SystemId>835b,8265</SystemId>
     <SystemName>HP EliteDesk 705 G3 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1607</OSName>
     <OSId>4243</OSId>
@@ -14152,7 +14158,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8265,835b</SystemId>
+    <SystemId>835b,8265</SystemId>
     <SystemName>HP EliteDesk 705 G3 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1607</OSName>
     <OSId>4243</OSId>
@@ -14402,7 +14408,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8057,8058</SystemId>
+    <SystemId>8058,8057</SystemId>
     <SystemName>HP EliteOne 800 G2 23-inch Non-Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1607</OSName>
     <OSId>4243</OSId>
@@ -14412,7 +14418,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8057,8058</SystemId>
+    <SystemId>8058,8057</SystemId>
     <SystemName>HP EliteOne 800 G2 23-inch Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1607</OSName>
     <OSId>4243</OSId>
@@ -14512,7 +14518,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>1993,1994,2101,2102</SystemId>
+    <SystemId>2101,1993,1994,2102</SystemId>
     <SystemName>HP ProBook 640 G1 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1607</OSName>
     <OSId>4243</OSId>
@@ -14762,7 +14768,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83f0,83f1</SystemId>
+    <SystemId>83f1,83f0</SystemId>
     <SystemName>HP ProDesk 480 G5 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1607</OSName>
     <OSId>4243</OSId>
@@ -14982,7 +14988,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8197,8198</SystemId>
+    <SystemId>8198,8197</SystemId>
     <SystemName>HP Spectre Pro x360 G2 Convertible PC</SystemName>
     <OSName>Windows 10 64-bit, 1607</OSName>
     <OSId>4243</OSId>
@@ -15922,7 +15928,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e9,8464</SystemId>
+    <SystemId>8464,83e9</SystemId>
     <SystemName>HP EliteDesk 705 65W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16012,7 +16018,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8265,835b</SystemId>
+    <SystemId>835b,8265</SystemId>
     <SystemName>HP EliteDesk 705 G3 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16022,7 +16028,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e7,8460,8461</SystemId>
+    <SystemId>8460,83e7,8461</SystemId>
     <SystemName>HP EliteDesk 705 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16032,7 +16038,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e8,8462,8463</SystemId>
+    <SystemId>8463,8462,83e8</SystemId>
     <SystemName>HP EliteDesk 705 G4 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16072,7 +16078,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>8409,83e2,845a</SystemId>
     <SystemName>HP EliteDesk 800 35W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16102,7 +16108,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>8409,845a,83e2</SystemId>
     <SystemName>HP EliteDesk 800 65W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16112,7 +16118,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>83e2,845a,8409</SystemId>
     <SystemName>HP EliteDesk 800 95W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16342,7 +16348,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8057,8058</SystemId>
+    <SystemId>8058,8057</SystemId>
     <SystemName>HP EliteOne 800 G2 23-inch Non-Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16352,7 +16358,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8057,8058</SystemId>
+    <SystemId>8058,8057</SystemId>
     <SystemName>HP EliteOne 800 G2 23-inch Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16372,7 +16378,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>829c,929C,829b</SystemId>
     <SystemName>HP EliteOne 800 G3 23.8-inch Non-Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16382,7 +16388,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>829c,829b,929C</SystemId>
     <SystemName>HP EliteOne 800 G3 23.8-inch Non-Touch All-in-One PC (ENERGY STAR)</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16392,7 +16398,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>829c,929C,829b</SystemId>
     <SystemName>HP EliteOne 800 G3 Base Model 23.8-inch Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16582,7 +16588,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>823c,823e</SystemId>
+    <SystemId>823e,823c</SystemId>
     <SystemName>HP ProBook 455 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16632,7 +16638,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>1993,1994,2101,2102</SystemId>
+    <SystemId>1994,2102,2101,1993</SystemId>
     <SystemName>HP ProBook 640 G1 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16712,7 +16718,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>1993,2101</SystemId>
+    <SystemId>2101,1993</SystemId>
     <SystemName>HP ProBook 650 G1 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16762,7 +16768,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8416,844a</SystemId>
+    <SystemId>844a,8416</SystemId>
     <SystemName>HP ProBook 650 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16852,7 +16858,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>198e,21f6</SystemId>
+    <SystemId>21f6,198e</SystemId>
     <SystemName>HP ProDesk 400 G1 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16912,7 +16918,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>846e,82a4,82a1</SystemId>
     <SystemName>HP ProDesk 400 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16932,7 +16938,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83f0,83f1</SystemId>
+    <SystemId>83f1,83f0</SystemId>
     <SystemName>HP ProDesk 400 G5 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16962,7 +16968,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>846e,82a4,82a1</SystemId>
     <SystemName>HP ProDesk 480 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -16972,7 +16978,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83f0,83f1</SystemId>
+    <SystemId>83f1,83f0</SystemId>
     <SystemName>HP ProDesk 480 G5 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -17082,7 +17088,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829d,82b3</SystemId>
+    <SystemId>82b3,829d</SystemId>
     <SystemName>HP ProDesk 600 G3 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -17092,7 +17098,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829d,82b3</SystemId>
+    <SystemId>82b3,829d</SystemId>
     <SystemName>HP ProDesk 600 G3 Microtower PC (with PCI slot)</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -17112,7 +17118,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ec,83ed</SystemId>
+    <SystemId>83ed,83ec</SystemId>
     <SystemName>HP ProDesk 600 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -17122,7 +17128,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ec,83ed</SystemId>
+    <SystemId>83ed,83ec</SystemId>
     <SystemName>HP ProDesk 600 G4 Microtower PC (with PCI slot)</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -17162,7 +17168,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829d,82b3</SystemId>
+    <SystemId>82b3,829d</SystemId>
     <SystemName>HP ProDesk 680 G3 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -17172,7 +17178,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ec,83ed</SystemId>
+    <SystemId>83ed,83ec</SystemId>
     <SystemName>HP ProDesk 680 G4 Microtower PC (with PCI slot)</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -17652,7 +17658,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8427,844f</SystemId>
+    <SystemId>844f,8427</SystemId>
     <SystemName>HP ZBook Studio G5 Mobile Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1703</OSName>
     <OSId>4244</OSId>
@@ -17972,7 +17978,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8236,82eb</SystemId>
+    <SystemId>82eb,8236</SystemId>
     <SystemName>HP EliteBook 745 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -18572,7 +18578,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8265,835b</SystemId>
+    <SystemId>835b,8265</SystemId>
     <SystemName>HP EliteDesk 705 G3 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -18592,7 +18598,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e8,8462,8463</SystemId>
+    <SystemId>83e8,8463,8462</SystemId>
     <SystemName>HP EliteDesk 705 G4 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -18602,7 +18608,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8055,8056</SystemId>
+    <SystemId>8056,8055</SystemId>
     <SystemName>HP EliteDesk 800 35W G2 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -18632,7 +18638,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>845a,8409,83e2</SystemId>
     <SystemName>HP EliteDesk 800 35W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -18662,7 +18668,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>83e2,845a,8409</SystemId>
     <SystemName>HP EliteDesk 800 65W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -18672,7 +18678,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>8409,83e2,845a</SystemId>
     <SystemName>HP EliteDesk 800 95W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -18942,7 +18948,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8057,8058</SystemId>
+    <SystemId>8058,8057</SystemId>
     <SystemName>HP EliteOne 800 G2 23-inch Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -18962,7 +18968,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>929C,829b,829c</SystemId>
     <SystemName>HP EliteOne 800 G3 23.8-inch Non-Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -18972,7 +18978,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>829c,829b,929C</SystemId>
     <SystemName>HP EliteOne 800 G3 23.8-inch Non-Touch All-in-One PC (ENERGY STAR)</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -18982,7 +18988,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>929C,829b,829c</SystemId>
     <SystemName>HP EliteOne 800 G3 Base Model 23.8-inch Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -19062,7 +19068,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>83ef,8A39</SystemId>
+    <SystemId>8A39,83ef</SystemId>
     <SystemName>HP MP9 G4 Retail System</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -19132,7 +19138,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>822c,8301</SystemId>
+    <SystemId>8301,822c</SystemId>
     <SystemName>HP ProBook 430 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -19152,7 +19158,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>2247,224a</SystemId>
+    <SystemId>224a,2247</SystemId>
     <SystemName>HP ProBook 440 G2 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -19192,7 +19198,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>2234,2236</SystemId>
+    <SystemId>2236,2234</SystemId>
     <SystemName>HP ProBook 445 G2 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -19212,7 +19218,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>2248,224a</SystemId>
+    <SystemId>224a,2248</SystemId>
     <SystemName>HP ProBook 450 G2 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -19272,7 +19278,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>823c,823e</SystemId>
+    <SystemId>823e,823c</SystemId>
     <SystemName>HP ProBook 455 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -19282,7 +19288,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>836e,8370</SystemId>
+    <SystemId>8370,836e</SystemId>
     <SystemName>HP ProBook 455 G5 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -19292,7 +19298,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>2249,224a</SystemId>
+    <SystemId>224a,2249</SystemId>
     <SystemName>HP ProBook 470 G2 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -19332,7 +19338,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>1993,1994,2101,2102</SystemId>
+    <SystemId>2101,1993,2102,1994</SystemId>
     <SystemName>HP ProBook 640 G1 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -19642,7 +19648,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>846e,82a4,82a1</SystemId>
     <SystemName>HP ProDesk 400 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -19702,7 +19708,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>82a4,82a1,846e</SystemId>
     <SystemName>HP ProDesk 480 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -19852,7 +19858,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829d,82b3</SystemId>
+    <SystemId>82b3,829d</SystemId>
     <SystemName>HP ProDesk 600 G3 Microtower PC (with PCI slot)</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -20042,7 +20048,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 440 G4 23.8-inch Non-Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -20112,7 +20118,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 600 G4 21.5-inch FHD Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -20152,7 +20158,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>82bf,82c0</SystemId>
+    <SystemId>82c0,82bf</SystemId>
     <SystemName>HP Z2 Mini G3 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -20162,7 +20168,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8457,8458</SystemId>
+    <SystemId>8458,8457</SystemId>
     <SystemName>HP Z2 Mini G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -20532,7 +20538,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8427,844f</SystemId>
+    <SystemId>844f,8427</SystemId>
     <SystemName>HP ZBook Studio G5 Mobile Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -20572,7 +20578,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>83fd,8471</SystemId>
+    <SystemId>8471,83fd</SystemId>
     <SystemName>HP ZHAN 66 Pro G1 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -20592,7 +20598,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP Zhan60 G1 23.8-inch FHD Non-Touch GPU All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1709</OSName>
     <OSId>4249</OSId>
@@ -20612,7 +20618,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>81c3,8396</SystemId>
+    <SystemId>8396,81c3</SystemId>
     <SystemName>HP Elite Slice</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -20622,7 +20628,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>81c3,8396</SystemId>
+    <SystemId>8396,81c3</SystemId>
     <SystemName>HP Elite Slice for Meeting Rooms</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -20902,7 +20908,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8236,82eb</SystemId>
+    <SystemId>82eb,8236</SystemId>
     <SystemName>HP EliteBook 745 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -21542,7 +21548,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8265,835b</SystemId>
+    <SystemId>835b,8265</SystemId>
     <SystemName>HP EliteDesk 705 G3 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -21552,7 +21558,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8265,835b</SystemId>
+    <SystemId>835b,8265</SystemId>
     <SystemName>HP EliteDesk 705 G3 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -21562,7 +21568,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e7,8460,8461</SystemId>
+    <SystemId>8460,8461,83e7</SystemId>
     <SystemName>HP EliteDesk 705 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -21572,7 +21578,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e8,8462,8463</SystemId>
+    <SystemId>8463,8462,83e8</SystemId>
     <SystemName>HP EliteDesk 705 G4 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -21582,7 +21588,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8055,8056</SystemId>
+    <SystemId>8056,8055</SystemId>
     <SystemName>HP EliteDesk 800 35W G2 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -21612,7 +21618,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>845a,83e2,8409</SystemId>
     <SystemName>HP EliteDesk 800 35W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -21642,7 +21648,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>83e2,845a,8409</SystemId>
     <SystemName>HP EliteDesk 800 65W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -21652,7 +21658,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>83e2,845a,8409</SystemId>
     <SystemName>HP EliteDesk 800 95W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -21762,7 +21768,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8593,8594,8595</SystemId>
+    <SystemId>8595,8594,8593</SystemId>
     <SystemName>HP EliteDesk 800 G5 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -21952,7 +21958,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8057,8058</SystemId>
+    <SystemId>8058,8057</SystemId>
     <SystemName>HP EliteOne 800 G2 23-inch Non-Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -21982,7 +21988,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>929C,829b,829c</SystemId>
     <SystemName>HP EliteOne 800 G3 23.8-inch Non-Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -21992,7 +21998,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>929C,829b,829c</SystemId>
     <SystemName>HP EliteOne 800 G3 23.8-inch Non-Touch All-in-One PC (ENERGY STAR)</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -22002,7 +22008,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>829c,929C,829b</SystemId>
     <SystemName>HP EliteOne 800 G3 Base Model 23.8-inch Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -22062,7 +22068,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>859f,85a0,85eb</SystemId>
+    <SystemId>85eb,85a0,859f</SystemId>
     <SystemName>HP EliteOne 800 G5 23.8-in Healthcare Edition All-in-One</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -22072,7 +22078,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>859f,85a0,85eb</SystemId>
+    <SystemId>85eb,85a0,859f</SystemId>
     <SystemName>HP EliteOne 800 G5 23.8-inch All-in-One</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -22152,7 +22158,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>83ef,8A39</SystemId>
+    <SystemId>8A39,83ef</SystemId>
     <SystemName>HP MP9 G4 Retail System</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -22232,7 +22238,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>822c,8301</SystemId>
+    <SystemId>8301,822c</SystemId>
     <SystemName>HP ProBook 430 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -22262,7 +22268,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>2247,224a</SystemId>
+    <SystemId>224a,2247</SystemId>
     <SystemName>HP ProBook 440 G2 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -22352,7 +22358,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>2248,224a</SystemId>
+    <SystemId>224a,2248</SystemId>
     <SystemName>HP ProBook 450 G2 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -22502,7 +22508,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>1993,1994,2101,2102</SystemId>
+    <SystemId>2102,2101,1994,1993</SystemId>
     <SystemName>HP ProBook 640 G1 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -22762,7 +22768,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>198e,21f6</SystemId>
+    <SystemId>21f6,198e</SystemId>
     <SystemName>HP ProDesk 400 G1 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -22842,7 +22848,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>82a1,846e,82a4</SystemId>
     <SystemName>HP ProDesk 400 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -22892,7 +22898,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8599,859a</SystemId>
+    <SystemId>859a,8599</SystemId>
     <SystemName>HP ProDesk 400 G6 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -22942,7 +22948,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>846e,82a4,82a1</SystemId>
     <SystemName>HP ProDesk 480 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -22952,7 +22958,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83f0,83f1</SystemId>
+    <SystemId>83f1,83f0</SystemId>
     <SystemName>HP ProDesk 480 G5 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -23122,7 +23128,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ec,83ed</SystemId>
+    <SystemId>83ed,83ec</SystemId>
     <SystemName>HP ProDesk 600 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -23132,7 +23138,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ec,83ed</SystemId>
+    <SystemId>83ed,83ec</SystemId>
     <SystemName>HP ProDesk 600 G4 Microtower PC (with PCI slot)</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -23162,7 +23168,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8596,861a</SystemId>
+    <SystemId>861a,8596</SystemId>
     <SystemName>HP ProDesk 600 G5 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -23172,7 +23178,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8596,861a</SystemId>
+    <SystemId>861a,8596</SystemId>
     <SystemName>HP ProDesk 600 G5 Microtower PC (with PCI slot)</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -23322,7 +23328,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 400 G4 20-inch HD+ Non-Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -23342,7 +23348,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ProOne 400 G5 20-inch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -23432,7 +23438,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 600 G4 21.5-inch FHD Non-Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -23452,7 +23458,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ProOne 600 G5 21.5-in All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -23482,7 +23488,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>8139,8397</SystemId>
+    <SystemId>8397,8139</SystemId>
     <SystemName>HP RP9 G1 Retail System Model 9018</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -23552,7 +23558,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>82bf,82c0</SystemId>
+    <SystemId>82c0,82bf</SystemId>
     <SystemName>HP Z2 Mini G3 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -23572,7 +23578,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8754,8755</SystemId>
+    <SystemId>8755,8754</SystemId>
     <SystemName>HP Z2 Mini G5 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -23592,7 +23598,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8752,8753</SystemId>
+    <SystemId>8753,8752</SystemId>
     <SystemName>HP Z2 Small Form Factor G5 Workstation IDS Base Model</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -23992,7 +23998,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8427,844f</SystemId>
+    <SystemId>844f,8427</SystemId>
     <SystemName>HP ZBook Studio x360 G5 Convertible Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -24082,7 +24088,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP Zhan60 G1 21.5-inch FHD Non-Touch GPU All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1803</OSName>
     <OSId>4254</OSId>
@@ -24172,7 +24178,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>83ef,8A39</SystemId>
+    <SystemId>8A39,83ef</SystemId>
     <SystemName>HP MP9 G4 Retail System</SystemName>
     <OSName>Windows 10 IoT Enterprise 2016 LTSB, 64-bit</OSName>
     <OSId>4260</OSId>
@@ -24352,7 +24358,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>8139,8397</SystemId>
+    <SystemId>8397,8139</SystemId>
     <SystemName>HP RP9 G1 Retail System Model 9018</SystemName>
     <OSName>Windows 10 IoT Enterprise 2019 LTSC, 64-bit</OSName>
     <OSId>4261</OSId>
@@ -24412,7 +24418,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>81c3,8396</SystemId>
+    <SystemId>8396,81c3</SystemId>
     <SystemName>HP Elite Slice</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -24422,7 +24428,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>81c3,8396</SystemId>
+    <SystemId>8396,81c3</SystemId>
     <SystemName>HP Elite Slice for Meeting Rooms</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -24522,7 +24528,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>82de,8417</SystemId>
+    <SystemId>8417,82de</SystemId>
     <SystemName>HP EliteBook 1040 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -24652,7 +24658,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8236,82eb</SystemId>
+    <SystemId>82eb,8236</SystemId>
     <SystemName>HP EliteBook 745 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25242,7 +25248,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e9,8464</SystemId>
+    <SystemId>8464,83e9</SystemId>
     <SystemName>HP EliteDesk 705 35W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25342,7 +25348,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8265,835b</SystemId>
+    <SystemId>835b,8265</SystemId>
     <SystemName>HP EliteDesk 705 G3 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25352,7 +25358,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e7,8460,8461</SystemId>
+    <SystemId>83e7,8461,8460</SystemId>
     <SystemName>HP EliteDesk 705 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25362,7 +25368,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e8,8462,8463</SystemId>
+    <SystemId>8462,8463,83e8</SystemId>
     <SystemName>HP EliteDesk 705 G4 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25382,7 +25388,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8617,8618</SystemId>
+    <SystemId>8618,8617</SystemId>
     <SystemName>HP EliteDesk 705 G5 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25392,7 +25398,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8055,8056</SystemId>
+    <SystemId>8056,8055</SystemId>
     <SystemName>HP EliteDesk 800 35W G2 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25422,7 +25428,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>8409,845a,83e2</SystemId>
     <SystemName>HP EliteDesk 800 35W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25452,7 +25458,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>8409,845a,83e2</SystemId>
     <SystemName>HP EliteDesk 800 65W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25462,7 +25468,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>845a,83e2,8409</SystemId>
     <SystemName>HP EliteDesk 800 95W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25572,7 +25578,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8593,8594,8595</SystemId>
+    <SystemId>8593,8595,8594</SystemId>
     <SystemName>HP EliteDesk 800 G5 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25602,7 +25608,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>872B,872C,8834</SystemId>
+    <SystemId>872C,8834,872B</SystemId>
     <SystemName>HP EliteDesk 805 G6 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25612,7 +25618,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>872B,8833</SystemId>
+    <SystemId>8833,872B</SystemId>
     <SystemName>HP EliteDesk 805 G6 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25782,7 +25788,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8057,8058</SystemId>
+    <SystemId>8058,8057</SystemId>
     <SystemName>HP EliteOne 800 G2 23-inch Non-Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25812,7 +25818,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>929C,829b,829c</SystemId>
     <SystemName>HP EliteOne 800 G3 23.8-inch Non-Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25822,7 +25828,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>829c,829b,929C</SystemId>
     <SystemName>HP EliteOne 800 G3 23.8-inch Non-Touch All-in-One PC (ENERGY STAR)</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25832,7 +25838,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>829b,929C,829c</SystemId>
     <SystemName>HP EliteOne 800 G3 Base Model 23.8-inch Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25902,7 +25908,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>859f,85a0,85eb</SystemId>
+    <SystemId>85a0,859f,85eb</SystemId>
     <SystemName>HP EliteOne 800 G5 23.8-inch All-in-One</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25922,7 +25928,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>874D,874E</SystemId>
+    <SystemId>874E,874D</SystemId>
     <SystemName>HP EliteOne 800 G6 27 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -25932,7 +25938,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>840a,8476</SystemId>
+    <SystemId>8476,840a</SystemId>
     <SystemName>HP Engage Flex Pro Retail System</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -26072,7 +26078,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>822c,8301</SystemId>
+    <SystemId>8301,822c</SystemId>
     <SystemName>HP ProBook 430 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -26272,7 +26278,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>2235,2236</SystemId>
+    <SystemId>2236,2235</SystemId>
     <SystemName>HP ProBook 455 G2 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -26372,7 +26378,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>1993,1994,2101,2102</SystemId>
+    <SystemId>1994,2101,1993,2102</SystemId>
     <SystemName>HP ProBook 640 G1 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -26462,7 +26468,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>1993,2101</SystemId>
+    <SystemId>2101,1993</SystemId>
     <SystemName>HP ProBook 650 G1 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -26472,7 +26478,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>80fd,8125</SystemId>
+    <SystemId>8125,80fd</SystemId>
     <SystemName>HP ProBook 650 G2 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -26642,7 +26648,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>198e,21f6</SystemId>
+    <SystemId>21f6,198e</SystemId>
     <SystemName>HP ProDesk 400 G1 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -26722,7 +26728,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>82a4,82a1,846e</SystemId>
     <SystemName>HP ProDesk 400 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -26752,7 +26758,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83f0,83f1</SystemId>
+    <SystemId>83f1,83f0</SystemId>
     <SystemName>HP ProDesk 400 G5 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -26812,7 +26818,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>872D,8835</SystemId>
+    <SystemId>8835,872D</SystemId>
     <SystemName>HP ProDesk 405 G6 Base Model Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -26872,7 +26878,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8599,859a</SystemId>
+    <SystemId>859a,8599</SystemId>
     <SystemName>HP ProDesk 480 G6 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27012,7 +27018,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829d,82b3</SystemId>
+    <SystemId>82b3,829d</SystemId>
     <SystemName>HP ProDesk 600 G3 Microtower PC (with PCI slot)</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27072,7 +27078,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8596,861a</SystemId>
+    <SystemId>861a,8596</SystemId>
     <SystemName>HP ProDesk 600 G5 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27122,7 +27128,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829d,82b3</SystemId>
+    <SystemId>82b3,829d</SystemId>
     <SystemName>HP ProDesk 680 G3 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27232,7 +27238,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 400 G4 20-inch HD+ Non-Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27242,7 +27248,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 400 G4 23.8-inch Non-Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27252,7 +27258,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ProOne 400 G5 20-inch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27262,7 +27268,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ProOne 400 G5 23.8-inch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27272,7 +27278,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c,880f,8810</SystemId>
+    <SystemId>871b,8810,880f,871c</SystemId>
     <SystemName>HP ProOne 400 G6 20 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27282,7 +27288,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871B,871C,880F,8810</SystemId>
+    <SystemId>871C,880F,8810,871B</SystemId>
     <SystemName>HP ProOne 400 G6 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27312,7 +27318,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c,880f,8810</SystemId>
+    <SystemId>871b,880f,871c,8810</SystemId>
     <SystemName>HP ProOne 440 G6 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27402,7 +27408,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c</SystemId>
+    <SystemId>871c,871b</SystemId>
     <SystemName>HP ProOne 600 G6 22 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27442,7 +27448,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>8139,8397</SystemId>
+    <SystemId>8397,8139</SystemId>
     <SystemName>HP RP9 G1 Retail System Model 9115</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27532,7 +27538,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8754,8755</SystemId>
+    <SystemId>8755,8754</SystemId>
     <SystemName>HP Z2 Mini G5 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27552,7 +27558,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8752,8753</SystemId>
+    <SystemId>8753,8752</SystemId>
     <SystemName>HP Z2 Small Form Factor G5 Workstation IDS Base Model</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27572,7 +27578,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8750,8751</SystemId>
+    <SystemId>8751,8750</SystemId>
     <SystemName>HP Z2 Tower G5 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27932,7 +27938,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8723,8724,8726</SystemId>
+    <SystemId>8723,8726,8724</SystemId>
     <SystemName>HP ZBook Firefly 14 G7 Mobile Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -27942,7 +27948,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8724,8727</SystemId>
+    <SystemId>8727,8724</SystemId>
     <SystemName>HP ZBook Firefly 15 G7 Mobile Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -28082,7 +28088,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ZHAN 66 Pro G1 23.8 inch FHD Non-Touch GPU All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -28102,7 +28108,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ZHAN 66 Pro G2 21.5-in All-in-One</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -28112,7 +28118,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ZHAN 66 Pro G2 23.8-in All-in-One</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -28122,7 +28128,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c</SystemId>
+    <SystemId>871c,871b</SystemId>
     <SystemName>HP ZHAN 66 Pro G3 22 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -28132,7 +28138,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c,880f,8810</SystemId>
+    <SystemId>880f,8810,871b,871c</SystemId>
     <SystemName>HP ZHAN 66 Pro G3 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -28142,7 +28148,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP Zhan60 G1 21.5-inch FHD Non-Touch GPU All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1809</OSName>
     <OSId>4263</OSId>
@@ -28162,7 +28168,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>874d,874e</SystemId>
+    <SystemId>874e,874d</SystemId>
     <SystemName>HP Collaboration G6 24 All-in-One with Zoom Rooms</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -28172,7 +28178,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>874d,874e</SystemId>
+    <SystemId>874e,874d</SystemId>
     <SystemName>HP Collaboration G6 27 All-in-One with Zoom Rooms</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -28192,7 +28198,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>81c3,8396</SystemId>
+    <SystemId>8396,81c3</SystemId>
     <SystemName>HP Elite Slice</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -28462,7 +28468,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8236,82eb</SystemId>
+    <SystemId>82eb,8236</SystemId>
     <SystemName>HP EliteBook 745 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29082,7 +29088,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e9,8464</SystemId>
+    <SystemId>8464,83e9</SystemId>
     <SystemName>HP EliteDesk 705 35W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29182,7 +29188,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8265,835b</SystemId>
+    <SystemId>835b,8265</SystemId>
     <SystemName>HP EliteDesk 705 G3 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29202,7 +29208,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e8,8462,8463</SystemId>
+    <SystemId>8462,83e8,8463</SystemId>
     <SystemName>HP EliteDesk 705 G4 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29242,7 +29248,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8055,8056</SystemId>
+    <SystemId>8056,8055</SystemId>
     <SystemName>HP EliteDesk 800 35W G2 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29272,7 +29278,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>8409,845a,83e2</SystemId>
     <SystemName>HP EliteDesk 800 35W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29302,7 +29308,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>845a,8409,83e2</SystemId>
     <SystemName>HP EliteDesk 800 65W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29312,7 +29318,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>845a,83e2,8409</SystemId>
     <SystemName>HP EliteDesk 800 95W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29402,7 +29408,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8593,8594,8595</SystemId>
+    <SystemId>8594,8595,8593</SystemId>
     <SystemName>HP EliteDesk 800 G5 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29432,7 +29438,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>870f,8710,8711</SystemId>
+    <SystemId>8710,870f,8711</SystemId>
     <SystemName>HP EliteDesk 800 G6 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29452,7 +29458,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>870B,870C</SystemId>
+    <SystemId>870C,870B</SystemId>
     <SystemName>HP EliteDesk 800 G6 Tower PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29462,7 +29468,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>872B,872C,8834</SystemId>
+    <SystemId>872B,8834,872C</SystemId>
     <SystemName>HP EliteDesk 805 G6 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29472,7 +29478,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>872B,8833</SystemId>
+    <SystemId>8833,872B</SystemId>
     <SystemName>HP EliteDesk 805 G6 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29652,7 +29658,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8057,8058</SystemId>
+    <SystemId>8058,8057</SystemId>
     <SystemName>HP EliteOne 800 G2 23-inch Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29672,7 +29678,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>829c,929C,829b</SystemId>
     <SystemName>HP EliteOne 800 G3 23.8-inch Non-Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29682,7 +29688,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>829c,929C,829b</SystemId>
     <SystemName>HP EliteOne 800 G3 23.8-inch Non-Touch All-in-One PC (ENERGY STAR)</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29692,7 +29698,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>929C,829b,829c</SystemId>
     <SystemName>HP EliteOne 800 G3 Base Model 23.8-inch Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29752,7 +29758,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>859f,85a0,85eb</SystemId>
+    <SystemId>85a0,859f,85eb</SystemId>
     <SystemName>HP EliteOne 800 G5 23.8-in Healthcare Edition All-in-One</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29782,7 +29788,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>874D,874E</SystemId>
+    <SystemId>874E,874D</SystemId>
     <SystemName>HP EliteOne 800 G6 27 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29792,7 +29798,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>840a,8476</SystemId>
+    <SystemId>8476,840a</SystemId>
     <SystemName>HP Engage Flex Pro Retail System</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -29922,7 +29928,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>822c,8301</SystemId>
+    <SystemId>8301,822c</SystemId>
     <SystemName>HP ProBook 430 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -30122,7 +30128,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>836e,8370</SystemId>
+    <SystemId>8370,836e</SystemId>
     <SystemName>HP ProBook 455 G5 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -30212,7 +30218,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>1993,1994,2101,2102</SystemId>
+    <SystemId>1994,2101,2102,1993</SystemId>
     <SystemName>HP ProBook 640 G1 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -30312,7 +30318,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>1993,2101</SystemId>
+    <SystemId>2101,1993</SystemId>
     <SystemName>HP ProBook 650 G1 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -30392,7 +30398,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87EA,87ED</SystemId>
+    <SystemId>87ED,87EA</SystemId>
     <SystemName>HP ProBook 650 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -30542,7 +30548,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>198e,21f6</SystemId>
+    <SystemId>21f6,198e</SystemId>
     <SystemName>HP ProDesk 400 G1 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -30592,7 +30598,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>82a4,82a1,846e</SystemId>
     <SystemName>HP ProDesk 400 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -30652,7 +30658,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8599,859a</SystemId>
+    <SystemId>859a,8599</SystemId>
     <SystemName>HP ProDesk 400 G6 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -30732,7 +30738,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>846e,82a1,82a4</SystemId>
     <SystemName>HP ProDesk 480 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -30752,7 +30758,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8599,859a</SystemId>
+    <SystemId>859a,8599</SystemId>
     <SystemName>HP ProDesk 480 G6 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -30862,7 +30868,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ec,83ed</SystemId>
+    <SystemId>83ed,83ec</SystemId>
     <SystemName>HP ProDesk 600 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -30872,7 +30878,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ec,83ed</SystemId>
+    <SystemId>83ed,83ec</SystemId>
     <SystemName>HP ProDesk 600 G4 Microtower PC (with PCI slot)</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -30902,7 +30908,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8596,861a</SystemId>
+    <SystemId>861a,8596</SystemId>
     <SystemName>HP ProDesk 600 G5 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31102,7 +31108,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 400 G4 20-inch HD+ Non-Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31122,7 +31128,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ProOne 400 G5 20-inch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31132,7 +31138,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ProOne 400 G5 23.8-inch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31142,7 +31148,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c,880f,8810</SystemId>
+    <SystemId>8810,871b,880f,871c</SystemId>
     <SystemName>HP ProOne 400 G6 20 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31152,7 +31158,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871B,871C,880F,8810</SystemId>
+    <SystemId>8810,880F,871C,871B</SystemId>
     <SystemName>HP ProOne 400 G6 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31182,7 +31188,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c,880f,8810</SystemId>
+    <SystemId>871b,880f,871c,8810</SystemId>
     <SystemName>HP ProOne 440 G6 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31232,7 +31238,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 600 G4 21.5-inch FHD Non-Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31242,7 +31248,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 600 G4 21.5-inch FHD Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31282,7 +31288,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>8139,8397</SystemId>
+    <SystemId>8397,8139</SystemId>
     <SystemName>HP RP9 G1 Retail System Model 9018</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31292,7 +31298,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>8139,8397</SystemId>
+    <SystemId>8397,8139</SystemId>
     <SystemName>HP RP9 G1 Retail System Model 9115</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31372,7 +31378,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>0010,88BE</SystemId>
+    <SystemId>88BE,0010</SystemId>
     <SystemName>HP Z2 G8 Tower Workstation Desktop PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31392,7 +31398,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8457,8458</SystemId>
+    <SystemId>8458,8457</SystemId>
     <SystemName>HP Z2 Mini G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31402,7 +31408,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8754,8755</SystemId>
+    <SystemId>8755,8754</SystemId>
     <SystemName>HP Z2 Mini G5 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31422,7 +31428,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8752,8753</SystemId>
+    <SystemId>8753,8752</SystemId>
     <SystemName>HP Z2 Small Form Factor G5 Workstation IDS Base Model</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31432,7 +31438,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>0010,88BF</SystemId>
+    <SystemId>88BF,0010</SystemId>
     <SystemName>HP Z2 Small Form Factor G8 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31802,7 +31808,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8723,8724,8726</SystemId>
+    <SystemId>8724,8726,8723</SystemId>
     <SystemName>HP ZBook Firefly 14 G7 Mobile Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31822,7 +31828,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8724,8727</SystemId>
+    <SystemId>8727,8724</SystemId>
     <SystemName>HP ZBook Firefly 15 G7 Mobile Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -31912,7 +31918,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8427,844f</SystemId>
+    <SystemId>844f,8427</SystemId>
     <SystemName>HP ZBook Studio x360 G5 Convertible Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -32002,7 +32008,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ZHAN 66 Pro G1 23.8 inch FHD Non-Touch GPU All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -32012,7 +32018,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>83fd,8471</SystemId>
+    <SystemId>8471,83fd</SystemId>
     <SystemName>HP ZHAN 66 Pro G1 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -32052,7 +32058,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c,880f,8810</SystemId>
+    <SystemId>8810,871b,871c,880f</SystemId>
     <SystemName>HP ZHAN 66 Pro G3 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -32062,7 +32068,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP Zhan60 G1 21.5-inch FHD Non-Touch GPU All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -32072,7 +32078,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP Zhan60 G1 23.8-inch FHD Non-Touch GPU All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1903</OSName>
     <OSId>4279</OSId>
@@ -32082,7 +32088,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>874d,874e</SystemId>
+    <SystemId>874e,874d</SystemId>
     <SystemName>HP Collaboration G6 24 All-in-One with Zoom Rooms</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -32352,7 +32358,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8236,82eb</SystemId>
+    <SystemId>82eb,8236</SystemId>
     <SystemName>HP EliteBook 745 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -32922,7 +32928,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e9,8464</SystemId>
+    <SystemId>8464,83e9</SystemId>
     <SystemName>HP EliteDesk 705 35W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33002,7 +33008,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e7,8460,8461</SystemId>
+    <SystemId>8460,83e7,8461</SystemId>
     <SystemName>HP EliteDesk 705 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33032,7 +33038,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8617,8618</SystemId>
+    <SystemId>8618,8617</SystemId>
     <SystemName>HP EliteDesk 705 G5 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33052,7 +33058,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8055,8056</SystemId>
+    <SystemId>8056,8055</SystemId>
     <SystemName>HP EliteDesk 800 35W G2 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33082,7 +33088,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>845a,83e2,8409</SystemId>
     <SystemName>HP EliteDesk 800 35W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33112,7 +33118,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>8409,83e2,845a</SystemId>
     <SystemName>HP EliteDesk 800 65W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33122,7 +33128,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>83e2,845a,8409</SystemId>
     <SystemName>HP EliteDesk 800 95W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33222,7 +33228,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>870f,8710,8711</SystemId>
+    <SystemId>870f,8711,8710</SystemId>
     <SystemName>HP EliteDesk 800 G6 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33282,7 +33288,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>872B,872C,8834</SystemId>
+    <SystemId>8834,872B,872C</SystemId>
     <SystemName>HP EliteDesk 805 G6 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33292,7 +33298,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>872B,8833</SystemId>
+    <SystemId>8833,872B</SystemId>
     <SystemName>HP EliteDesk 805 G6 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33362,7 +33368,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>870B,870C</SystemId>
+    <SystemId>870C,870B</SystemId>
     <SystemName>HP EliteDesk 880 G6 Tower PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33482,7 +33488,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8057,8058</SystemId>
+    <SystemId>8058,8057</SystemId>
     <SystemName>HP EliteOne 800 G2 23-inch Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33502,7 +33508,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>929C,829c,829b</SystemId>
     <SystemName>HP EliteOne 800 G3 23.8-inch Non-Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33512,7 +33518,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>829b,929C,829c</SystemId>
     <SystemName>HP EliteOne 800 G3 23.8-inch Non-Touch All-in-One PC (ENERGY STAR)</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33582,7 +33588,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>859f,85a0,85eb</SystemId>
+    <SystemId>85a0,859f,85eb</SystemId>
     <SystemName>HP EliteOne 800 G5 23.8-in Healthcare Edition All-in-One</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33592,7 +33598,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>859f,85a0,85eb</SystemId>
+    <SystemId>85a0,85eb,859f</SystemId>
     <SystemName>HP EliteOne 800 G5 23.8-inch All-in-One</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33612,7 +33618,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>874D,874E</SystemId>
+    <SystemId>874E,874D</SystemId>
     <SystemName>HP EliteOne 800 G6 27 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33652,7 +33658,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>840a,8476</SystemId>
+    <SystemId>8476,840a</SystemId>
     <SystemName>HP Engage Flex Pro Retail System</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33712,7 +33718,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>83ef,8A39</SystemId>
+    <SystemId>8A39,83ef</SystemId>
     <SystemName>HP MP9 G4 Retail System</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33742,7 +33748,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>822c,8301</SystemId>
+    <SystemId>8301,822c</SystemId>
     <SystemName>HP ProBook 430 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33842,7 +33848,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87E0,8807</SystemId>
+    <SystemId>87E0,8A76,8807,8A74</SystemId>
     <SystemName>HP ProBook 440 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -33952,7 +33958,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87E1,8808</SystemId>
+    <SystemId>87E1,8808,8A75,8A77</SystemId>
     <SystemName>HP ProBook 450 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -34062,7 +34068,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87EA,87ED</SystemId>
+    <SystemId>87ED,87EA</SystemId>
     <SystemName>HP ProBook 630 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -34142,7 +34148,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87EA,87ED</SystemId>
+    <SystemId>87ED,87EA</SystemId>
     <SystemName>HP ProBook 640 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -34222,7 +34228,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8416,844a</SystemId>
+    <SystemId>844a,8416</SystemId>
     <SystemName>HP ProBook 650 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -34402,7 +34408,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>846e,82a1,82a4</SystemId>
     <SystemName>HP ProDesk 400 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -34462,7 +34468,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8599,859a</SystemId>
+    <SystemId>859a,8599</SystemId>
     <SystemName>HP ProDesk 400 G6 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -34522,7 +34528,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>872D,8835</SystemId>
+    <SystemId>8835,872D</SystemId>
     <SystemName>HP ProDesk 405 G6 Base Model Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -34562,7 +34568,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>846e,82a4,82a1</SystemId>
     <SystemName>HP ProDesk 480 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -34692,7 +34698,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ec,83ed</SystemId>
+    <SystemId>83ed,83ec</SystemId>
     <SystemName>HP ProDesk 600 G4 Microtower PC (with PCI slot)</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -34732,7 +34738,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8596,861a</SystemId>
+    <SystemId>861a,8596</SystemId>
     <SystemName>HP ProDesk 600 G5 Microtower PC (with PCI slot)</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -34892,7 +34898,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 400 G4 20-inch HD+ Non-Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -34902,7 +34908,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 400 G4 23.8-inch Non-Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -34922,7 +34928,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ProOne 400 G5 23.8-inch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -34942,7 +34948,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871B,871C,880F,8810</SystemId>
+    <SystemId>880F,8810,871B,871C</SystemId>
     <SystemName>HP ProOne 400 G6 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -34962,7 +34968,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ProOne 440 G5 23.8-in All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -34972,7 +34978,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c,880f,8810</SystemId>
+    <SystemId>8810,871c,871b,880f</SystemId>
     <SystemName>HP ProOne 440 G6 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -35042,7 +35048,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ProOne 600 G5 21.5-in All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -35052,7 +35058,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c</SystemId>
+    <SystemId>871c,871b</SystemId>
     <SystemName>HP ProOne 600 G6 22 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -35062,7 +35068,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>8139,8397</SystemId>
+    <SystemId>8397,8139</SystemId>
     <SystemName>HP RP9 G1 Retail System Model 9015</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -35082,7 +35088,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>8139,8397</SystemId>
+    <SystemId>8397,8139</SystemId>
     <SystemName>HP RP9 G1 Retail System Model 9115</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -35092,7 +35098,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>8139,8397</SystemId>
+    <SystemId>8397,8139</SystemId>
     <SystemName>HP RP9 G1 Retail System Model 9118</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -35152,7 +35158,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>870b,870c</SystemId>
+    <SystemId>870c,870b</SystemId>
     <SystemName>HP Z1 Entry Tower G6</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -35172,17 +35178,17 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>0010,88BE</SystemId>
+    <SystemId>88BE,0010</SystemId>
     <SystemName>HP Z2 G8 Tower Workstation Desktop PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
-    <SoftPaqId>sp113276</SoftPaqId>
+    <SoftPaqId>sp135909</SoftPaqId>
     <ProductId>2100619352</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>82bf,82c0</SystemId>
+    <SystemId>82c0,82bf</SystemId>
     <SystemName>HP Z2 Mini G3 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -35202,11 +35208,11 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8754,8755</SystemId>
+    <SystemId>8755,8754</SystemId>
     <SystemName>HP Z2 Mini G5 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
-    <SoftPaqId>sp113617</SoftPaqId>
+    <SoftPaqId>sp135910</SoftPaqId>
     <ProductId>34407177</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -35222,11 +35228,11 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8752,8753</SystemId>
+    <SystemId>8753,8752</SystemId>
     <SystemName>HP Z2 Small Form Factor G5 Workstation IDS Base Model</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
-    <SoftPaqId>sp113617</SoftPaqId>
+    <SoftPaqId>sp135910</SoftPaqId>
     <ProductId>34407172</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -35236,7 +35242,7 @@
     <SystemName>HP Z2 Small Form Factor G8 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
-    <SoftPaqId>sp113276</SoftPaqId>
+    <SoftPaqId>sp135909</SoftPaqId>
     <ProductId>2100619346</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -35256,7 +35262,7 @@
     <SystemName>HP Z2 Tower G5 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
-    <SoftPaqId>sp113617</SoftPaqId>
+    <SoftPaqId>sp135910</SoftPaqId>
     <ProductId>34407182</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -35306,7 +35312,7 @@
     <SystemName>HP Z4 G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
-    <SoftPaqId>sp113515</SoftPaqId>
+    <SoftPaqId>sp135907</SoftPaqId>
     <ProductId>16449894</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -35336,7 +35342,7 @@
     <SystemName>HP Z6 G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
-    <SoftPaqId>sp113514</SoftPaqId>
+    <SoftPaqId>sp135906</SoftPaqId>
     <ProductId>16449796</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -35366,7 +35372,7 @@
     <SystemName>HP Z8 G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
-    <SoftPaqId>sp113514</SoftPaqId>
+    <SoftPaqId>sp135906</SoftPaqId>
     <ProductId>16449805</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -35562,7 +35568,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8723,8724,8726</SystemId>
+    <SystemId>8724,8723,8726</SystemId>
     <SystemName>HP ZBook Firefly 14 G7 Mobile Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -35582,7 +35588,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8724,8727</SystemId>
+    <SystemId>8727,8724</SystemId>
     <SystemName>HP ZBook Firefly 15 G7 Mobile Workstation</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -35852,7 +35858,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c</SystemId>
+    <SystemId>871c,871b</SystemId>
     <SystemName>HP ZHAN 66 Pro G3 22 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -35862,7 +35868,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c,880f,8810</SystemId>
+    <SystemId>8810,871b,871c,880f</SystemId>
     <SystemName>HP ZHAN 66 Pro G3 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -35872,7 +35878,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP Zhan60 G1 21.5-inch FHD Non-Touch GPU All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -35882,7 +35888,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP Zhan60 G1 23.8-inch FHD Non-Touch GPU All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 1909</OSName>
     <OSId>4283</OSId>
@@ -35902,7 +35908,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>874d,874e</SystemId>
+    <SystemId>874e,874d</SystemId>
     <SystemName>HP Collaboration G6 27 All-in-One with Zoom Rooms</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -35952,7 +35958,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>81c3,8396</SystemId>
+    <SystemId>8396,81c3</SystemId>
     <SystemName>HP Elite Slice for Meeting Rooms</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -36142,7 +36148,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8236,82eb</SystemId>
+    <SystemId>82eb,8236</SystemId>
     <SystemName>HP EliteBook 745 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -36662,7 +36668,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e9,8464</SystemId>
+    <SystemId>8464,83e9</SystemId>
     <SystemName>HP EliteDesk 705 35W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -36672,7 +36678,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e9,8464</SystemId>
+    <SystemId>8464,83e9</SystemId>
     <SystemName>HP EliteDesk 705 65W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -36742,7 +36748,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e7,8460,8461</SystemId>
+    <SystemId>83e7,8461,8460</SystemId>
     <SystemName>HP EliteDesk 705 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -36752,7 +36758,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e8,8462,8463</SystemId>
+    <SystemId>8463,83e8,8462</SystemId>
     <SystemName>HP EliteDesk 705 G4 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -36802,7 +36808,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>845a,83e2,8409</SystemId>
     <SystemName>HP EliteDesk 800 35W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -36822,7 +36828,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>845a,83e2,8409</SystemId>
     <SystemName>HP EliteDesk 800 65W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -36832,7 +36838,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>83e2,845a,8409</SystemId>
     <SystemName>HP EliteDesk 800 95W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -36882,7 +36888,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8593,8594,8595</SystemId>
+    <SystemId>8595,8593,8594</SystemId>
     <SystemName>HP EliteDesk 800 G5 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -36912,7 +36918,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>870f,8710,8711</SystemId>
+    <SystemId>8711,870f,8710</SystemId>
     <SystemName>HP EliteDesk 800 G6 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -36982,7 +36988,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>872B,8833</SystemId>
+    <SystemId>8833,872B</SystemId>
     <SystemName>HP EliteDesk 805 G6 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -37042,7 +37048,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>870B,870C</SystemId>
+    <SystemId>870C,870B</SystemId>
     <SystemName>HP EliteDesk 880 G6 Tower PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -37152,7 +37158,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8057,8058</SystemId>
+    <SystemId>8058,8057</SystemId>
     <SystemName>HP EliteOne 800 G2 23-inch Non-Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -37162,7 +37168,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8057,8058</SystemId>
+    <SystemId>8058,8057</SystemId>
     <SystemName>HP EliteOne 800 G2 23-inch Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -37182,7 +37188,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>829c,829b,929C</SystemId>
     <SystemName>HP EliteOne 800 G3 23.8-inch Non-Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -37202,7 +37208,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>829b,929C,829c</SystemId>
     <SystemName>HP EliteOne 800 G3 Base Model 23.8-inch Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -37262,7 +37268,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>859f,85a0,85eb</SystemId>
+    <SystemId>85a0,859f,85eb</SystemId>
     <SystemName>HP EliteOne 800 G5 23.8-in Healthcare Edition All-in-One</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -37272,7 +37278,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>859f,85a0,85eb</SystemId>
+    <SystemId>859f,85eb,85a0</SystemId>
     <SystemName>HP EliteOne 800 G5 23.8-inch All-in-One</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -37332,7 +37338,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>840a,8476</SystemId>
+    <SystemId>8476,840a</SystemId>
     <SystemName>HP Engage Flex Pro Retail System</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -37392,7 +37398,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>8740,874F</SystemId>
+    <SystemId>874F,8740</SystemId>
     <SystemName>HP Engage One Pro AIO System</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -37472,7 +37478,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87DF,8806</SystemId>
+    <SystemId>8806,87DF</SystemId>
     <SystemName>HP ProBook 430 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -37522,7 +37528,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87E0,8807</SystemId>
+    <SystemId>87E0,8807,8A74,8A76</SystemId>
     <SystemName>HP ProBook 440 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -37612,7 +37618,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87E1,8808</SystemId>
+    <SystemId>87E1,8808,8A77,8A75</SystemId>
     <SystemName>HP ProBook 450 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -37632,7 +37638,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>836e,8370</SystemId>
+    <SystemId>8370,836e</SystemId>
     <SystemName>HP ProBook 455 G5 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -37702,7 +37708,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87EA,87ED</SystemId>
+    <SystemId>87ED,87EA</SystemId>
     <SystemName>HP ProBook 630 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -37832,7 +37838,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8416,844a</SystemId>
+    <SystemId>844a,8416</SystemId>
     <SystemName>HP ProBook 650 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -37992,7 +37998,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>846e,82a1,82a4</SystemId>
     <SystemName>HP ProDesk 400 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38022,7 +38028,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83f0,83f1</SystemId>
+    <SystemId>83f1,83f0</SystemId>
     <SystemName>HP ProDesk 400 G5 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38112,7 +38118,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>872D,8835</SystemId>
+    <SystemId>8835,872D</SystemId>
     <SystemName>HP ProDesk 405 G6 Base Model Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38122,7 +38128,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>872E,8836</SystemId>
+    <SystemId>8836,872E</SystemId>
     <SystemName>HP ProDesk 405 G6 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38152,7 +38158,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>846e,82a1,82a4</SystemId>
     <SystemName>HP ProDesk 480 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38212,7 +38218,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829d,82b3</SystemId>
+    <SystemId>82b3,829d</SystemId>
     <SystemName>HP ProDesk 600 G3 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38242,7 +38248,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ec,83ed</SystemId>
+    <SystemId>83ed,83ec</SystemId>
     <SystemName>HP ProDesk 600 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38252,7 +38258,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ec,83ed</SystemId>
+    <SystemId>83ed,83ec</SystemId>
     <SystemName>HP ProDesk 600 G4 Microtower PC (with PCI slot)</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38282,7 +38288,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8596,861a</SystemId>
+    <SystemId>861a,8596</SystemId>
     <SystemName>HP ProDesk 600 G5 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38352,7 +38358,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829d,82b3</SystemId>
+    <SystemId>82b3,829d</SystemId>
     <SystemName>HP ProDesk 680 G3 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38442,7 +38448,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 400 G4 20-inch HD+ Non-Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38502,7 +38508,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 440 G4 23.8-inch Non-Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38512,7 +38518,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ProOne 440 G5 23.8-in All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38522,7 +38528,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c,880f,8810</SystemId>
+    <SystemId>871b,871c,8810,880f</SystemId>
     <SystemName>HP ProOne 440 G6 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38592,7 +38598,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ProOne 600 G5 21.5-in All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38602,7 +38608,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c</SystemId>
+    <SystemId>871c,871b</SystemId>
     <SystemName>HP ProOne 600 G6 22 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38612,7 +38618,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>8139,8397</SystemId>
+    <SystemId>8397,8139</SystemId>
     <SystemName>HP RP9 G1 Retail System Model 9015</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38622,7 +38628,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>8139,8397</SystemId>
+    <SystemId>8397,8139</SystemId>
     <SystemName>HP RP9 G1 Retail System Model 9018</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38642,7 +38648,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>8139,8397</SystemId>
+    <SystemId>8397,8139</SystemId>
     <SystemName>HP RP9 G1 Retail System Model 9118</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38702,7 +38708,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>870b,870c</SystemId>
+    <SystemId>870c,870b</SystemId>
     <SystemName>HP Z1 Entry Tower G6</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38726,7 +38732,7 @@
     <SystemName>HP Z2 G8 Tower Workstation Desktop PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
-    <SoftPaqId>sp135573</SoftPaqId>
+    <SoftPaqId>sp135909</SoftPaqId>
     <ProductId>2100619352</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -38742,7 +38748,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8457,8458</SystemId>
+    <SystemId>8458,8457</SystemId>
     <SystemName>HP Z2 Mini G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -38756,7 +38762,7 @@
     <SystemName>HP Z2 Mini G5 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
-    <SoftPaqId>sp135574</SoftPaqId>
+    <SoftPaqId>sp135910</SoftPaqId>
     <ProductId>34407177</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -38772,21 +38778,21 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8752,8753</SystemId>
+    <SystemId>8753,8752</SystemId>
     <SystemName>HP Z2 Small Form Factor G5 Workstation IDS Base Model</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
-    <SoftPaqId>sp135574</SoftPaqId>
+    <SoftPaqId>sp135910</SoftPaqId>
     <ProductId>34407172</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>0010,88BF</SystemId>
+    <SystemId>88BF,0010</SystemId>
     <SystemName>HP Z2 Small Form Factor G8 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
-    <SoftPaqId>sp135573</SoftPaqId>
+    <SoftPaqId>sp135909</SoftPaqId>
     <ProductId>2100619346</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -38806,7 +38812,7 @@
     <SystemName>HP Z2 Tower G5 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
-    <SoftPaqId>sp135574</SoftPaqId>
+    <SoftPaqId>sp135910</SoftPaqId>
     <ProductId>34407182</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -38856,7 +38862,7 @@
     <SystemName>HP Z4 G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
-    <SoftPaqId>sp135572</SoftPaqId>
+    <SoftPaqId>sp135907</SoftPaqId>
     <ProductId>16449894</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -38886,7 +38892,7 @@
     <SystemName>HP Z6 G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
-    <SoftPaqId>sp135571</SoftPaqId>
+    <SoftPaqId>sp135906</SoftPaqId>
     <ProductId>16449796</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -38916,7 +38922,7 @@
     <SystemName>HP Z8 G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
-    <SoftPaqId>sp135571</SoftPaqId>
+    <SoftPaqId>sp135906</SoftPaqId>
     <ProductId>16449805</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -39082,7 +39088,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8723,8724,8726</SystemId>
+    <SystemId>8724,8723,8726</SystemId>
     <SystemName>HP ZBook Firefly 14 G7 Mobile Workstation</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -39102,7 +39108,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8724,8727</SystemId>
+    <SystemId>8727,8724</SystemId>
     <SystemName>HP ZBook Firefly 15 G7 Mobile Workstation</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -39332,7 +39338,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ZHAN 66 Pro G1 23.8 inch FHD Non-Touch GPU All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -39372,7 +39378,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c</SystemId>
+    <SystemId>871c,871b</SystemId>
     <SystemName>HP ZHAN 66 Pro G3 22 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -39382,7 +39388,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c,880f,8810</SystemId>
+    <SystemId>871c,880f,871b,8810</SystemId>
     <SystemName>HP ZHAN 66 Pro G3 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -39392,7 +39398,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP Zhan60 G1 21.5-inch FHD Non-Touch GPU All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 2004</OSName>
     <OSId>4285</OSId>
@@ -39462,7 +39468,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>81c3,8396</SystemId>
+    <SystemId>8396,81c3</SystemId>
     <SystemName>HP Elite Slice</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -39472,7 +39478,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>81c3,8396</SystemId>
+    <SystemId>8396,81c3</SystemId>
     <SystemName>HP Elite Slice for Meeting Rooms</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -39572,7 +39578,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>82de,8417</SystemId>
+    <SystemId>8417,82de</SystemId>
     <SystemName>HP EliteBook 1040 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40132,7 +40138,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e9,8464</SystemId>
+    <SystemId>8464,83e9</SystemId>
     <SystemName>HP EliteDesk 705 65W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40162,7 +40168,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8265,835b</SystemId>
+    <SystemId>835b,8265</SystemId>
     <SystemName>HP EliteDesk 705 G3 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40182,7 +40188,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e8,8462,8463</SystemId>
+    <SystemId>8462,83e8,8463</SystemId>
     <SystemName>HP EliteDesk 705 G4 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40202,7 +40208,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8617,8618</SystemId>
+    <SystemId>8618,8617</SystemId>
     <SystemName>HP EliteDesk 705 G5 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40232,7 +40238,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>8409,845a,83e2</SystemId>
     <SystemName>HP EliteDesk 800 35W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40252,7 +40258,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>8409,845a,83e2</SystemId>
     <SystemName>HP EliteDesk 800 65W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40262,7 +40268,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>8409,83e2,845a</SystemId>
     <SystemName>HP EliteDesk 800 95W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40312,7 +40318,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8593,8594,8595</SystemId>
+    <SystemId>8595,8594,8593</SystemId>
     <SystemName>HP EliteDesk 800 G5 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40342,7 +40348,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>870f,8710,8711</SystemId>
+    <SystemId>8710,870f,8711</SystemId>
     <SystemName>HP EliteDesk 800 G6 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40352,7 +40358,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>870B,870C</SystemId>
+    <SystemId>870C,870B</SystemId>
     <SystemName>HP EliteDesk 800 G6 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40372,7 +40378,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>889F,88A0</SystemId>
+    <SystemId>88A0,889F</SystemId>
     <SystemName>HP EliteDesk 800 G8 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40402,7 +40408,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>872B,872C,8834</SystemId>
+    <SystemId>872B,8834,872C</SystemId>
     <SystemName>HP EliteDesk 805 G6 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40582,7 +40588,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>929C,829c,829b</SystemId>
     <SystemName>HP EliteOne 800 G3 23.8-inch Non-Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40602,7 +40608,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>829b,929C,829c</SystemId>
     <SystemName>HP EliteOne 800 G3 Base Model 23.8-inch Touch All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40662,7 +40668,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>859f,85a0,85eb</SystemId>
+    <SystemId>85eb,85a0,859f</SystemId>
     <SystemName>HP EliteOne 800 G5 23.8-in Healthcare Edition All-in-One</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40672,7 +40678,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>859f,85a0,85eb</SystemId>
+    <SystemId>85a0,85eb,859f</SystemId>
     <SystemName>HP EliteOne 800 G5 23.8-inch All-in-One</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40692,7 +40698,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>874D,874E</SystemId>
+    <SystemId>874E,874D</SystemId>
     <SystemName>HP EliteOne 800 G6 27 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40802,7 +40808,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>83ef,8A39</SystemId>
+    <SystemId>8A39,83ef</SystemId>
     <SystemName>HP MP9 G4 Retail System</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40862,7 +40868,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87DF,8806</SystemId>
+    <SystemId>8806,87DF</SystemId>
     <SystemName>HP ProBook 430 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40902,7 +40908,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87E0,8807</SystemId>
+    <SystemId>87E0,8A76,8A74,8807</SystemId>
     <SystemName>HP ProBook 440 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40982,7 +40988,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87E1,8808</SystemId>
+    <SystemId>8808,8A77,8A75,87E1</SystemId>
     <SystemName>HP ProBook 450 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -40992,7 +40998,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>823c,823e</SystemId>
+    <SystemId>823e,823c</SystemId>
     <SystemName>HP ProBook 455 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41062,7 +41068,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87EA,87ED</SystemId>
+    <SystemId>87ED,87EA</SystemId>
     <SystemName>HP ProBook 630 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41122,7 +41128,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87EA,87ED</SystemId>
+    <SystemId>87ED,87EA</SystemId>
     <SystemName>HP ProBook 640 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41152,7 +41158,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8416,844a</SystemId>
+    <SystemId>844a,8416</SystemId>
     <SystemName>HP ProBook 650 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41302,7 +41308,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>82a4,82a1,846e</SystemId>
     <SystemName>HP ProDesk 400 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41432,7 +41438,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>872E,8836</SystemId>
+    <SystemId>8836,872E</SystemId>
     <SystemName>HP ProDesk 405 G6 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41442,7 +41448,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8882,8968</SystemId>
+    <SystemId>8968,8882</SystemId>
     <SystemName>HP ProDesk 405 G8 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41472,7 +41478,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83f0,83f1</SystemId>
+    <SystemId>83f1,83f0</SystemId>
     <SystemName>HP ProDesk 480 G5 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41482,7 +41488,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8599,859a</SystemId>
+    <SystemId>859a,8599</SystemId>
     <SystemName>HP ProDesk 480 G6 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41522,7 +41528,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829d,82b3</SystemId>
+    <SystemId>82b3,829d</SystemId>
     <SystemName>HP ProDesk 600 G3 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41552,7 +41558,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ec,83ed</SystemId>
+    <SystemId>83ed,83ec</SystemId>
     <SystemName>HP ProDesk 600 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41562,7 +41568,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ec,83ed</SystemId>
+    <SystemId>83ed,83ec</SystemId>
     <SystemName>HP ProDesk 600 G4 Microtower PC (with PCI slot)</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41682,7 +41688,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ec,83ed</SystemId>
+    <SystemId>83ed,83ec</SystemId>
     <SystemName>HP ProDesk 680 G4 Microtower PC (with PCI slot)</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41742,7 +41748,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 400 G4 23.8-inch Non-Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41752,7 +41758,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ProOne 400 G5 20-inch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41772,7 +41778,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c,880f,8810</SystemId>
+    <SystemId>8810,880f,871c,871b</SystemId>
     <SystemName>HP ProOne 400 G6 20 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41782,7 +41788,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871B,871C,880F,8810</SystemId>
+    <SystemId>880F,871B,8810,871C</SystemId>
     <SystemName>HP ProOne 400 G6 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41812,7 +41818,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c,880f,8810</SystemId>
+    <SystemId>871b,880f,8810,871c</SystemId>
     <SystemName>HP ProOne 440 G6 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41832,7 +41838,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 600 G4 21.5-inch FHD Non-Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41852,7 +41858,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ProOne 600 G5 21.5-in All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41902,7 +41908,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>POS Systems/Retail Solutions</ProductType>
-    <SystemId>8139,8397</SystemId>
+    <SystemId>8397,8139</SystemId>
     <SystemName>HP RP9 G1 Retail System Model 9118</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -41982,17 +41988,17 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>0010,88BE</SystemId>
+    <SystemId>88BE,0010</SystemId>
     <SystemName>HP Z2 G8 Tower Workstation Desktop PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
-    <SoftPaqId>sp135573</SoftPaqId>
+    <SoftPaqId>sp135909</SoftPaqId>
     <ProductId>2100619352</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>82bf,82c0</SystemId>
+    <SystemId>82c0,82bf</SystemId>
     <SystemName>HP Z2 Mini G3 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -42002,7 +42008,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8457,8458</SystemId>
+    <SystemId>8458,8457</SystemId>
     <SystemName>HP Z2 Mini G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -42012,11 +42018,11 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8754,8755</SystemId>
+    <SystemId>8755,8754</SystemId>
     <SystemName>HP Z2 Mini G5 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
-    <SoftPaqId>sp135574</SoftPaqId>
+    <SoftPaqId>sp135910</SoftPaqId>
     <ProductId>34407177</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -42032,11 +42038,11 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8752,8753</SystemId>
+    <SystemId>8753,8752</SystemId>
     <SystemName>HP Z2 Small Form Factor G5 Workstation IDS Base Model</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
-    <SoftPaqId>sp135574</SoftPaqId>
+    <SoftPaqId>sp135910</SoftPaqId>
     <ProductId>34407172</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -42046,7 +42052,7 @@
     <SystemName>HP Z2 Small Form Factor G8 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
-    <SoftPaqId>sp135573</SoftPaqId>
+    <SoftPaqId>sp135909</SoftPaqId>
     <ProductId>2100619346</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -42066,7 +42072,7 @@
     <SystemName>HP Z2 Tower G5 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
-    <SoftPaqId>sp135574</SoftPaqId>
+    <SoftPaqId>sp135910</SoftPaqId>
     <ProductId>34407182</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -42116,7 +42122,7 @@
     <SystemName>HP Z4 G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
-    <SoftPaqId>sp135572</SoftPaqId>
+    <SoftPaqId>sp135907</SoftPaqId>
     <ProductId>16449894</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -42136,7 +42142,7 @@
     <SystemName>HP Z6 G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
-    <SoftPaqId>sp135571</SoftPaqId>
+    <SoftPaqId>sp135906</SoftPaqId>
     <ProductId>16449796</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -42156,7 +42162,7 @@
     <SystemName>HP Z8 G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
-    <SoftPaqId>sp135571</SoftPaqId>
+    <SoftPaqId>sp135906</SoftPaqId>
     <ProductId>16449805</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -42302,7 +42308,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8723,8724,8726</SystemId>
+    <SystemId>8726,8724,8723</SystemId>
     <SystemName>HP ZBook Firefly 14 G7 Mobile Workstation</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -42322,7 +42328,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8724,8727</SystemId>
+    <SystemId>8727,8724</SystemId>
     <SystemName>HP ZBook Firefly 15 G7 Mobile Workstation</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -42422,7 +42428,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8427,844f</SystemId>
+    <SystemId>844f,8427</SystemId>
     <SystemName>HP ZBook Studio G5 Mobile Workstation</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -42442,7 +42448,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8427,844f</SystemId>
+    <SystemId>844f,8427</SystemId>
     <SystemName>HP ZBook Studio x360 G5 Convertible Workstation</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -42572,7 +42578,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ZHAN 66 Pro G2 21.5-in All-in-One</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -42582,7 +42588,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ZHAN 66 Pro G2 23.8-in All-in-One</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -42592,7 +42598,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c</SystemId>
+    <SystemId>871c,871b</SystemId>
     <SystemName>HP ZHAN 66 Pro G3 22 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -42602,7 +42608,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c,880f,8810</SystemId>
+    <SystemId>8810,880f,871c,871b</SystemId>
     <SystemName>HP ZHAN 66 Pro G3 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 20H2</OSName>
     <OSId>4288</OSId>
@@ -42632,7 +42638,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>874d,874e</SystemId>
+    <SystemId>874e,874d</SystemId>
     <SystemName>HP Collaboration G6 24 All-in-One with Zoom Rooms</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -42642,7 +42648,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>874d,874e</SystemId>
+    <SystemId>874e,874d</SystemId>
     <SystemName>HP Collaboration G6 27 All-in-One with Zoom Rooms</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -42682,7 +42688,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>81c3,8396</SystemId>
+    <SystemId>8396,81c3</SystemId>
     <SystemName>HP Elite Slice</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -43272,7 +43278,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e9,8464</SystemId>
+    <SystemId>8464,83e9</SystemId>
     <SystemName>HP EliteDesk 705 35W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -43292,7 +43298,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e7,8460,8461</SystemId>
+    <SystemId>8461,83e7,8460</SystemId>
     <SystemName>HP EliteDesk 705 G4 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -43302,7 +43308,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e8,8462,8463</SystemId>
+    <SystemId>8463,8462,83e8</SystemId>
     <SystemName>HP EliteDesk 705 G4 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -43322,7 +43328,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8617,8618</SystemId>
+    <SystemId>8618,8617</SystemId>
     <SystemName>HP EliteDesk 705 G5 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -43332,7 +43338,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>83e2,845a,8409</SystemId>
     <SystemName>HP EliteDesk 800 35W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -43352,7 +43358,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83e2,8409,845a</SystemId>
+    <SystemId>8409,845a,83e2</SystemId>
     <SystemName>HP EliteDesk 800 95W G4 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -43382,7 +43388,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8593,8594,8595</SystemId>
+    <SystemId>8595,8593,8594</SystemId>
     <SystemName>HP EliteDesk 800 G5 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -43412,7 +43418,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>870f,8710,8711</SystemId>
+    <SystemId>8710,870f,8711</SystemId>
     <SystemName>HP EliteDesk 800 G6 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -43452,7 +43458,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>872B,872C,8834</SystemId>
+    <SystemId>872B,8834,872C</SystemId>
     <SystemName>HP EliteDesk 805 G6 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -43462,7 +43468,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>872B,8833</SystemId>
+    <SystemId>8833,872B</SystemId>
     <SystemName>HP EliteDesk 805 G6 Small Form Factor PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -43612,7 +43618,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>859f,85a0,85eb</SystemId>
+    <SystemId>85a0,85eb,859f</SystemId>
     <SystemName>HP EliteOne 800 G5 23.8-in Healthcare Edition All-in-One</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -43632,7 +43638,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>874d,874e</SystemId>
+    <SystemId>874e,874d</SystemId>
     <SystemName>HP EliteOne 800 G6 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -43772,7 +43778,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87E0,8807</SystemId>
+    <SystemId>87E0,8A76,8807,8A74</SystemId>
     <SystemName>HP ProBook 440 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -43852,7 +43858,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87E1,8808</SystemId>
+    <SystemId>8A75,8808,8A77,87E1</SystemId>
     <SystemName>HP ProBook 450 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -43972,7 +43978,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87EA,87ED</SystemId>
+    <SystemId>87ED,87EA</SystemId>
     <SystemName>HP ProBook 640 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -43992,7 +43998,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8416,844a</SystemId>
+    <SystemId>844a,8416</SystemId>
     <SystemName>HP ProBook 650 G4 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44022,7 +44028,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>87EA,87ED</SystemId>
+    <SystemId>87ED,87EA</SystemId>
     <SystemName>HP ProBook 650 G8 Notebook PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44182,7 +44188,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>872E,8836</SystemId>
+    <SystemId>8836,872E</SystemId>
     <SystemName>HP ProDesk 405 G6 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44192,7 +44198,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8882,8968</SystemId>
+    <SystemId>8968,8882</SystemId>
     <SystemName>HP ProDesk 405 G8 Desktop Mini PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44212,7 +44218,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83f0,83f1</SystemId>
+    <SystemId>83f1,83f0</SystemId>
     <SystemName>HP ProDesk 480 G5 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44242,7 +44248,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ec,83ed</SystemId>
+    <SystemId>83ed,83ec</SystemId>
     <SystemName>HP ProDesk 600 G4 Microtower PC (with PCI slot)</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44272,7 +44278,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8596,861a</SystemId>
+    <SystemId>861a,8596</SystemId>
     <SystemName>HP ProDesk 600 G5 Microtower PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44282,7 +44288,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>8596,861a</SystemId>
+    <SystemId>861a,8596</SystemId>
     <SystemName>HP ProDesk 600 G5 Microtower PC (with PCI slot)</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44342,7 +44348,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 400 G4 20-inch HD+ Non-Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44382,7 +44388,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c,880f,8810</SystemId>
+    <SystemId>8810,871c,880f,871b</SystemId>
     <SystemName>HP ProOne 400 G6 20 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44392,7 +44398,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871B,871C,880F,8810</SystemId>
+    <SystemId>871C,880F,8810,871B</SystemId>
     <SystemName>HP ProOne 400 G6 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44412,7 +44418,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>85a1,85a2</SystemId>
+    <SystemId>85a2,85a1</SystemId>
     <SystemName>HP ProOne 440 G5 23.8-in All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44422,7 +44428,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c,880f,8810</SystemId>
+    <SystemId>871b,8810,880f,871c</SystemId>
     <SystemName>HP ProOne 440 G6 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44432,7 +44438,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP ProOne 600 G4 21.5-inch FHD Non-Touch All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44526,13 +44532,13 @@
     <SystemName>HP Z2 G8 Tower Workstation Desktop PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
-    <SoftPaqId>sp135573</SoftPaqId>
+    <SoftPaqId>sp135909</SoftPaqId>
     <ProductId>2100619352</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>82bf,82c0</SystemId>
+    <SystemId>82c0,82bf</SystemId>
     <SystemName>HP Z2 Mini G3 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44542,7 +44548,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8457,8458</SystemId>
+    <SystemId>8458,8457</SystemId>
     <SystemName>HP Z2 Mini G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44556,7 +44562,7 @@
     <SystemName>HP Z2 Mini G5 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
-    <SoftPaqId>sp135574</SoftPaqId>
+    <SoftPaqId>sp135910</SoftPaqId>
     <ProductId>34407177</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -44576,7 +44582,7 @@
     <SystemName>HP Z2 Small Form Factor G5 Workstation IDS Base Model</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
-    <SoftPaqId>sp135574</SoftPaqId>
+    <SoftPaqId>sp135910</SoftPaqId>
     <ProductId>34407172</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -44586,7 +44592,7 @@
     <SystemName>HP Z2 Small Form Factor G8 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
-    <SoftPaqId>sp135573</SoftPaqId>
+    <SoftPaqId>sp135909</SoftPaqId>
     <ProductId>2100619346</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -44602,11 +44608,11 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>8750,8751</SystemId>
+    <SystemId>8751,8750</SystemId>
     <SystemName>HP Z2 Tower G5 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
-    <SoftPaqId>sp135574</SoftPaqId>
+    <SoftPaqId>sp135910</SoftPaqId>
     <ProductId>34407182</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -44656,7 +44662,7 @@
     <SystemName>HP Z4 G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
-    <SoftPaqId>sp135572</SoftPaqId>
+    <SoftPaqId>sp135907</SoftPaqId>
     <ProductId>16449894</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -44676,7 +44682,7 @@
     <SystemName>HP Z6 G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
-    <SoftPaqId>sp135571</SoftPaqId>
+    <SoftPaqId>sp135906</SoftPaqId>
     <ProductId>16449796</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -44696,7 +44702,7 @@
     <SystemName>HP Z8 G4 Workstation</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
-    <SoftPaqId>sp135571</SoftPaqId>
+    <SoftPaqId>sp135906</SoftPaqId>
     <ProductId>16449805</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
@@ -44932,7 +44938,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8427,844f</SystemId>
+    <SystemId>844f,8427</SystemId>
     <SystemName>HP ZBook Studio G5 Mobile Workstation</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -44952,7 +44958,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>8427,844f</SystemId>
+    <SystemId>844f,8427</SystemId>
     <SystemName>HP ZBook Studio x360 G5 Convertible Workstation</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -45102,7 +45108,7 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>871b,871c,880f,8810</SystemId>
+    <SystemId>871b,8810,880f,871c</SystemId>
     <SystemName>HP ZHAN 66 Pro G3 24 All-in-One PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
@@ -45122,12 +45128,242 @@
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>83ea,83eb</SystemId>
+    <SystemId>83eb,83ea</SystemId>
     <SystemName>HP Zhan60 G1 23.8-inch FHD Non-Touch GPU All-in-One Business PC</SystemName>
     <OSName>Windows 10 64-bit, 21H1</OSName>
     <OSId>4295</OSId>
     <SoftPaqId>sp114256</SoftPaqId>
     <ProductId>21351244</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Notebooks &amp; Tablets</ProductType>
+    <SystemId>8292</SystemId>
+    <SystemName>HP EliteBook 820 G4 Notebook PC</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp112019</SoftPaqId>
+    <ProductId>11122282</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Notebooks &amp; Tablets</ProductType>
+    <SystemId>828c</SystemId>
+    <SystemName>HP EliteBook 840 G4 Notebook PC</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp112019</SoftPaqId>
+    <ProductId>11122292</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Notebooks &amp; Tablets</ProductType>
+    <SystemId>828c</SystemId>
+    <SystemName>HP EliteBook 848 G4 Notebook PC</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp112019</SoftPaqId>
+    <ProductId>14785517</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Desktops</ProductType>
+    <SystemId>889C</SystemId>
+    <SystemName>HP EliteDesk 800 G8 Small Form Factor PC</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp113167</SoftPaqId>
+    <ProductId>2100617066</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Desktops</ProductType>
+    <SystemId>889C</SystemId>
+    <SystemName>HP EliteDesk 800 G8 Tower PC</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp113167</SoftPaqId>
+    <ProductId>2100617059</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Desktops</ProductType>
+    <SystemId>889C</SystemId>
+    <SystemName>HP EliteDesk 880 G8 Tower PC</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp113167</SoftPaqId>
+    <ProductId>2100617061</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>POS Systems/Retail Solutions</ProductType>
+    <SystemId>8476,840a</SystemId>
+    <SystemName>HP Engage Flex Pro Retail System</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp112554</SoftPaqId>
+    <ProductId>22488599</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>POS Systems/Retail Solutions</ProductType>
+    <SystemId>8476</SystemId>
+    <SystemName>HP Engage Flex Pro-C Retail System</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp112554</SoftPaqId>
+    <ProductId>22488605</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>POS Systems/Retail Solutions</ProductType>
+    <SystemId>846f</SystemId>
+    <SystemName>HP Engage Go Mobile System</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp112432</SoftPaqId>
+    <ProductId>23588899</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Workstations</ProductType>
+    <SystemId>889c</SystemId>
+    <SystemName>HP Z1 Entry Tower G8</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp113167</SoftPaqId>
+    <ProductId>2100676931</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Workstations</ProductType>
+    <SystemId>0010,88BE</SystemId>
+    <SystemName>HP Z2 G8 Tower Workstation Desktop PC</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp135909</SoftPaqId>
+    <ProductId>2100619352</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Workstations</ProductType>
+    <SystemId>82c0,82bf</SystemId>
+    <SystemName>HP Z2 Mini G3 Workstation</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp79089</SoftPaqId>
+    <ProductId>12716709</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Workstations</ProductType>
+    <SystemId>8457,8458</SystemId>
+    <SystemName>HP Z2 Mini G4 Workstation</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp106157</SoftPaqId>
+    <ProductId>19968626</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Workstations</ProductType>
+    <SystemId>8754,8755</SystemId>
+    <SystemName>HP Z2 Mini G5 Workstation</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp135910</SoftPaqId>
+    <ProductId>34407177</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Workstations</ProductType>
+    <SystemId>8456</SystemId>
+    <SystemName>HP Z2 Small Form Factor G4 Workstation</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp106157</SoftPaqId>
+    <ProductId>20063448</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Workstations</ProductType>
+    <SystemId>8753,8752</SystemId>
+    <SystemName>HP Z2 Small Form Factor G5 Workstation IDS Base Model</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp135910</SoftPaqId>
+    <ProductId>34407172</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Workstations</ProductType>
+    <SystemId>88BF,0010</SystemId>
+    <SystemName>HP Z2 Small Form Factor G8 Workstation</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp135909</SoftPaqId>
+    <ProductId>2100619346</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Workstations</ProductType>
+    <SystemId>8455</SystemId>
+    <SystemName>HP Z2 Tower G4 Workstation</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp106157</SoftPaqId>
+    <ProductId>20063441</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Workstations</ProductType>
+    <SystemId>8750,8751</SystemId>
+    <SystemName>HP Z2 Tower G5 Workstation</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp135910</SoftPaqId>
+    <ProductId>34407182</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Workstations</ProductType>
+    <SystemId>802f</SystemId>
+    <SystemName>HP Z240 Tower Workstation</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp99401</SoftPaqId>
+    <ProductId>8354564</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Workstations</ProductType>
+    <SystemId>81c5</SystemId>
+    <SystemName>HP Z4 G4 Workstation</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp135907</SoftPaqId>
+    <ProductId>16449894</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Workstations</ProductType>
+    <SystemId>81c6</SystemId>
+    <SystemName>HP Z6 G4 Workstation</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp135906</SoftPaqId>
+    <ProductId>16449796</ProductId>
+  </ProductOSDriverPack>
+  <ProductOSDriverPack>
+    <Architecture>64-bit</Architecture>
+    <ProductType>Workstations</ProductType>
+    <SystemId>81c7</SystemId>
+    <SystemName>HP Z8 G4 Workstation</SystemName>
+    <OSName>Windows 10 64-bit, 21H2</OSName>
+    <OSId>4297</OSId>
+    <SoftPaqId>sp135906</SoftPaqId>
+    <ProductId>16449805</ProductId>
   </ProductOSDriverPack>
   <ProductOSDriverPack>
     <Architecture>64-bit</Architecture>
@@ -45392,7 +45628,7 @@
   <ProductOSDriverPack>
     <Architecture>32-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>81c3,8396</SystemId>
+    <SystemId>8396,81c3</SystemId>
     <SystemName>HP Elite Slice</SystemName>
     <OSName>Windows 7 32-bit</OSName>
     <OSId>4053</OSId>
@@ -46092,7 +46328,7 @@
   <ProductOSDriverPack>
     <Architecture>32-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829b,829c,929C</SystemId>
+    <SystemId>829b,929C,829c</SystemId>
     <SystemName>HP EliteOne 800 G3 Base Model 23.8-inch Touch All-in-One PC</SystemName>
     <OSName>Windows 7 32-bit</OSName>
     <OSId>4053</OSId>
@@ -46172,7 +46408,7 @@
   <ProductOSDriverPack>
     <Architecture>32-bit</Architecture>
     <ProductType>Notebooks &amp; Tablets</ProductType>
-    <SystemId>1993,1994,2101,2102</SystemId>
+    <SystemId>2101,1994,2102,1993</SystemId>
     <SystemName>HP ProBook 640 G1 Notebook PC</SystemName>
     <OSName>Windows 7 32-bit</OSName>
     <OSId>4053</OSId>
@@ -46272,7 +46508,7 @@
   <ProductOSDriverPack>
     <Architecture>32-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>82a4,82a1,846e</SystemId>
     <SystemName>HP ProDesk 400 G4 Microtower PC</SystemName>
     <OSName>Windows 7 32-bit</OSName>
     <OSId>4053</OSId>
@@ -46292,7 +46528,7 @@
   <ProductOSDriverPack>
     <Architecture>32-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>82a1,82a4,846e</SystemId>
+    <SystemId>846e,82a1,82a4</SystemId>
     <SystemName>HP ProDesk 480 G4 Microtower PC</SystemName>
     <OSName>Windows 7 32-bit</OSName>
     <OSId>4053</OSId>
@@ -46382,7 +46618,7 @@
   <ProductOSDriverPack>
     <Architecture>32-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829d,82b3</SystemId>
+    <SystemId>82b3,829d</SystemId>
     <SystemName>HP ProDesk 600 G3 Microtower PC</SystemName>
     <OSName>Windows 7 32-bit</OSName>
     <OSId>4053</OSId>
@@ -46392,7 +46628,7 @@
   <ProductOSDriverPack>
     <Architecture>32-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829d,82b3</SystemId>
+    <SystemId>82b3,829d</SystemId>
     <SystemName>HP ProDesk 600 G3 Microtower PC (with PCI slot)</SystemName>
     <OSName>Windows 7 32-bit</OSName>
     <OSId>4053</OSId>
@@ -46422,7 +46658,7 @@
   <ProductOSDriverPack>
     <Architecture>32-bit</Architecture>
     <ProductType>Desktops</ProductType>
-    <SystemId>829d,82b3</SystemId>
+    <SystemId>82b3,829d</SystemId>
     <SystemName>HP ProDesk 680 G3 Microtower PC</SystemName>
     <OSName>Windows 7 32-bit</OSName>
     <OSId>4053</OSId>
@@ -46612,7 +46848,7 @@
   <ProductOSDriverPack>
     <Architecture>32-bit</Architecture>
     <ProductType>Workstations</ProductType>
-    <SystemId>0ae8,0b54</SystemId>
+    <SystemId>0b54,0ae8</SystemId>
     <SystemName>HP Z600 Workstation</SystemName>
     <OSName>Windows 7 32-bit</OSName>
     <OSId>4053</OSId>
